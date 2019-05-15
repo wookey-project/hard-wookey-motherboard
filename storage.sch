@@ -1,0 +1,407 @@
+EESchema Schematic File Version 4
+LIBS:wookey-cache
+EELAYER 29 0
+EELAYER END
+$Descr A2 23386 16535
+encoding utf-8
+Sheet 7 6
+Title "Wookey-Project"
+Date "2019-05-13"
+Rev ""
+Comp "ANSSI"
+Comment1 "Designed by Mathieu RENARD"
+Comment2 "LICENCE: "
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Device:R_Small R408
+U 1 1 5B9F2724
+P 8150 5500
+F 0 "R408" V 8100 5250 50  0000 C CNN
+F 1 "47K" V 8150 5500 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 8080 5500 30  0001 C CNN
+F 3 "" H 8150 5500 30  0000 C CNN
+F 4 "FARNELL" H 0   -50 50  0001 C CNN "Distrib"
+F 5 "2122577" H 0   -50 50  0001 C CNN "Distrib PN"
+F 6 "Vishay " H 0   -50 50  0001 C CNN "MFG Name"
+F 7 "CRCW060347K0FKEA" H 0   -50 50  0001 C CNN "MFG Part Num"
+	1    8150 5500
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_Small R407
+U 1 1 5B9F2725
+P 8000 5500
+F 0 "R407" V 7950 5250 50  0000 C CNN
+F 1 "47K" V 8000 5500 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 7930 5500 30  0001 C CNN
+F 3 "" H 8000 5500 30  0000 C CNN
+F 4 "FARNELL" H 0   -50 50  0001 C CNN "Distrib"
+F 5 "2122577" H 0   -50 50  0001 C CNN "Distrib PN"
+F 6 "Vishay " H 0   -50 50  0001 C CNN "MFG Name"
+F 7 "CRCW060347K0FKEA" H 0   -50 50  0001 C CNN "MFG Part Num"
+	1    8000 5500
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_Small R401
+U 1 1 5B9F2726
+P 7850 5500
+F 0 "R401" V 7800 5250 50  0000 C CNN
+F 1 "47K" V 7850 5500 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 7780 5500 30  0001 C CNN
+F 3 "" H 7850 5500 30  0000 C CNN
+F 4 "FARNELL" H 0   -50 50  0001 C CNN "Distrib"
+F 5 "2122577" H 0   -50 50  0001 C CNN "Distrib PN"
+F 6 "Vishay " H 0   -50 50  0001 C CNN "MFG Name"
+F 7 "CRCW060347K0FKEA" H 0   -50 50  0001 C CNN "MFG Part Num"
+	1    7850 5500
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_Small R405
+U 1 1 5B9F2727
+P 8300 5500
+F 0 "R405" V 8250 5250 50  0000 C CNN
+F 1 "47K" V 8300 5500 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 8230 5500 30  0001 C CNN
+F 3 "" H 8300 5500 30  0000 C CNN
+F 4 "FARNELL" H 0   -50 50  0001 C CNN "Distrib"
+F 5 "2122577" H 0   -50 50  0001 C CNN "Distrib PN"
+F 6 "Vishay " H 0   -50 50  0001 C CNN "MFG Name"
+F 7 "CRCW060347K0FKEA" H 0   -50 50  0001 C CNN "MFG Part Num"
+	1    8300 5500
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_Small R402
+U 1 1 5B9F2728
+P 8450 5500
+F 0 "R402" V 8400 5250 50  0000 C CNN
+F 1 "47K" V 8450 5500 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 8380 5500 30  0001 C CNN
+F 3 "" H 8450 5500 30  0000 C CNN
+F 4 "FARNELL" H 0   -50 50  0001 C CNN "Distrib"
+F 5 "2122577" H 0   -50 50  0001 C CNN "Distrib PN"
+F 6 "Vishay " H 0   -50 50  0001 C CNN "MFG Name"
+F 7 "CRCW060347K0FKEA" H 0   -50 50  0001 C CNN "MFG Part Num"
+	1    8450 5500
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_Small R409
+U 1 1 5B9F2729
+P 7700 5500
+F 0 "R409" V 7650 5250 50  0000 C CNN
+F 1 "47K" V 7700 5500 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 7630 5500 30  0001 C CNN
+F 3 "" H 7700 5500 30  0000 C CNN
+F 4 "FARNELL" H 0   -50 50  0001 C CNN "Distrib"
+F 5 "2122577" H 0   -50 50  0001 C CNN "Distrib PN"
+F 6 "Vishay " H 0   -50 50  0001 C CNN "MFG Name"
+F 7 "CRCW060347K0FKEA" H 0   -50 50  0001 C CNN "MFG Part Num"
+	1    7700 5500
+	1    0    0    -1  
+$EndComp
+Text Label -16800 27400 0    81   ~ 0
+ear
+Text HLabel 7050 6900 0    50   BiDi ~ 0
+SD_D0
+Text HLabel 7050 7000 0    50   BiDi ~ 0
+SD_D1
+Text HLabel 7050 7100 0    50   BiDi ~ 0
+SD_D2
+Text HLabel 7050 6300 0    50   BiDi ~ 0
+SD_D3
+$Comp
+L wookey:+3V3 #PWR0154
+U 1 1 5B013662
+P 7100 4700
+F 0 "#PWR0154" H 7100 4550 50  0001 C CNN
+F 1 "+3V3" H 7100 4840 50  0000 C CNN
+F 2 "" H 7100 4700 60  0000 C CNN
+F 3 "" H 7100 4700 60  0000 C CNN
+	1    7100 4700
+	1    0    0    -1  
+$EndComp
+$Comp
+L wookey:GND #PWR0155
+U 1 1 5B013717
+P 7100 4900
+F 0 "#PWR0155" H 7100 4650 50  0001 C CNN
+F 1 "GND" H 7100 4750 50  0000 C CNN
+F 2 "" H 7100 4900 60  0000 C CNN
+F 3 "" H 7100 4900 60  0000 C CNN
+	1    7100 4900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7100 4900 7100 4850
+Wire Wire Line
+	7100 4850 6800 4850
+Wire Wire Line
+	7100 4700 7100 4750
+Wire Wire Line
+	7100 4750 6800 4750
+Text HLabel 6800 4750 0    50   UnSpc ~ 0
++3V3
+Text HLabel 6800 4850 0    50   UnSpc ~ 0
+GND
+$Comp
+L power:+3V3 #PWR0156
+U 1 1 5581ABE1
+P 8700 5200
+F 0 "#PWR0156" H 8700 5050 50  0001 C CNN
+F 1 "+3V3" H 8700 5340 50  0000 C CNN
+F 2 "" H 8700 5200 60  0000 C CNN
+F 3 "" H 8700 5200 60  0000 C CNN
+	1    8700 5200
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0157
+U 1 1 5581C312
+P 9450 7650
+F 0 "#PWR0157" H 9450 7400 50  0001 C CNN
+F 1 "GND" H 9450 7500 50  0000 C CNN
+F 2 "" H 9450 7650 60  0000 C CNN
+F 3 "" H 9450 7650 60  0000 C CNN
+	1    9450 7650
+	1    0    0    -1  
+$EndComp
+Text Label 7050 7100 0    60   ~ 0
+SD_D2
+Text Label 7050 6300 0    60   ~ 0
+SD_D3
+Text Label 7050 6400 0    60   ~ 0
+SD_CMD
+Text Label 7050 6700 0    60   ~ 0
+SD_CLK
+Text Label 7050 6900 0    60   ~ 0
+SD_D0
+Text Label 7050 7000 0    60   ~ 0
+SD_D1
+Text Label 7350 5950 2    60   ~ 0
+SD_SW
+$Comp
+L Device:R_Small R410
+U 1 1 5586423F
+P 9100 5450
+F 0 "R410" V 9050 5150 50  0000 C CNN
+F 1 "47K" V 9100 5450 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 9030 5450 30  0001 C CNN
+F 3 "" H 9100 5450 30  0000 C CNN
+F 4 "FARNELL" H 0   -50 50  0001 C CNN "Distrib"
+F 5 "2122577" H 0   -50 50  0001 C CNN "Distrib PN"
+F 6 "Vishay " H 0   -50 50  0001 C CNN "MFG Name"
+F 7 "CRCW060347K0FKEA" H 0   -50 50  0001 C CNN "MFG Part Num"
+	1    9100 5450
+	1    0    0    -1  
+$EndComp
+$Comp
+L wookey:MICROSDCARD U400
+U 1 1 559EFF9F
+P 10450 6900
+F 0 "U400" H 10000 7700 60  0000 C CNN
+F 1 "MICROSDCARD" H 10250 6200 60  0000 C CNN
+F 2 "wookey:SDCARD_DM3AT" H 10450 6900 81  0001 C CNN
+F 3 "http://fr.rs-online.com/web/p/supports-de-carte-sim-et-memoire/8281884/" H 10450 6900 81  0001 C CNN
+F 4 "Hirose" H 10450 6900 60  0001 C CNN "MFG Name"
+F 5 "DM3AT-SF-PEJM5" H 10450 6900 60  0001 C CNN "MFG Part Num"
+F 6 "828-1884" H 10450 6900 60  0001 C CNN "Distrib PN"
+F 7 "http://fr.rs-online.com/web/p/supports-de-carte-sim-et-memoire/8281884/" H 10450 6900 60  0001 C CNN "Distrib Link"
+F 8 "RS" H 10450 6900 50  0001 C CNN "Distrib"
+	1    10450 6900
+	1    0    0    -1  
+$EndComp
+Text Label -16800 27400 0    81   ~ 0
+ear
+Wire Wire Line
+	9100 5200 9100 5350
+Wire Wire Line
+	9100 5950 7050 5950
+Wire Wire Line
+	9100 5550 9100 5950
+Wire Wire Line
+	7050 7000 8150 7000
+Wire Wire Line
+	7050 6300 7850 6300
+Wire Wire Line
+	8000 6900 8000 5600
+Connection ~ 9450 6800
+Wire Wire Line
+	9450 6800 9650 6800
+Wire Wire Line
+	9450 6500 9650 6500
+Connection ~ 8450 5200
+Wire Wire Line
+	8700 5200 8700 6600
+Connection ~ 8450 6400
+Wire Wire Line
+	8450 5600 8450 6400
+Wire Wire Line
+	7050 6400 8450 6400
+Connection ~ 8300 6700
+Wire Wire Line
+	8300 5600 8300 6700
+Wire Wire Line
+	7050 6700 8300 6700
+Connection ~ 8150 7000
+Wire Wire Line
+	8150 7000 8150 5600
+Connection ~ 8000 6900
+Connection ~ 7850 6300
+Wire Wire Line
+	7850 5600 7850 6300
+Connection ~ 7700 7100
+Wire Wire Line
+	7700 5600 7700 7100
+Wire Wire Line
+	7050 7100 7700 7100
+Wire Wire Line
+	7050 6900 8000 6900
+Connection ~ 8300 5200
+Wire Wire Line
+	8300 5200 8300 5400
+Connection ~ 8150 5200
+Wire Wire Line
+	8150 5200 8150 5400
+Connection ~ 8000 5200
+Wire Wire Line
+	8000 5200 8000 5400
+Connection ~ 7850 5200
+Wire Wire Line
+	7850 5400 7850 5200
+Wire Wire Line
+	8450 5200 8450 5400
+Wire Wire Line
+	7700 5200 7850 5200
+Wire Wire Line
+	7700 5400 7700 5200
+Wire Wire Line
+	9450 7650 9450 7400
+Connection ~ 9450 7400
+Wire Wire Line
+	9100 7300 9650 7300
+Connection ~ 9100 5950
+Wire Wire Line
+	9450 6500 9450 6800
+Wire Wire Line
+	9450 6800 9450 7400
+Wire Wire Line
+	8450 6400 9650 6400
+Wire Wire Line
+	8300 6700 9650 6700
+Wire Wire Line
+	8150 7000 9650 7000
+Wire Wire Line
+	8000 6900 9650 6900
+Wire Wire Line
+	7850 6300 9650 6300
+Wire Wire Line
+	7700 7100 9650 7100
+Wire Wire Line
+	8300 5200 8450 5200
+Wire Wire Line
+	8150 5200 8300 5200
+Wire Wire Line
+	8000 5200 8150 5200
+Wire Wire Line
+	7850 5200 8000 5200
+Wire Wire Line
+	9450 7400 9650 7400
+Wire Wire Line
+	9100 5950 9100 7300
+Wire Wire Line
+	16950 13400 16950 13600
+Connection ~ 8700 5200
+Wire Wire Line
+	8700 5200 9100 5200
+Wire Wire Line
+	8700 6600 9650 6600
+Wire Wire Line
+	8450 5200 8700 5200
+$Comp
+L Device:CP_Small C401
+U 1 1 5BAA5C2B
+P 9100 8200
+F 0 "C401" H 9200 8350 50  0000 L CNN
+F 1 "0.1uF 6,3V" H 9250 8250 50  0000 L CNN
+F 2 "Capacitor_Tantalum_SMD:CP_EIA-1608-08_AVX-J" H 9138 8050 30  0001 C CNN
+F 3 "" H 9100 8200 60  0000 C CNN
+F 4 "AVX" H 9100 8200 50  0001 C CNN "MFG Name"
+F 5 "02016D104KAT2A" H 9100 8200 50  0001 C CNN "MFG Part Num"
+F 6 "FARNELL" H 0   0   50  0001 C CNN "Distrib"
+F 7 "https://fr.farnell.com/avx/02016d104kat2a/cond-0-1-f-6-3v-10-x5r-0201/dp/1657913" H 0   0   50  0001 C CNN "Distrib Link"
+F 8 "1657913" H 0   0   50  0001 C CNN "Distrib PN"
+	1    9100 8200
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3V3 #PWR0158
+U 1 1 5BAA5F01
+P 8850 7900
+F 0 "#PWR0158" H 8850 7750 50  0001 C CNN
+F 1 "+3V3" H 8850 8040 50  0000 C CNN
+F 2 "" H 8850 7900 60  0000 C CNN
+F 3 "" H 8850 7900 60  0000 C CNN
+	1    8850 7900
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0159
+U 1 1 5BAA5F46
+P 8850 8450
+F 0 "#PWR0159" H 8850 8200 50  0001 C CNN
+F 1 "GND" H 8850 8300 50  0000 C CNN
+F 2 "" H 8850 8450 60  0000 C CNN
+F 3 "" H 8850 8450 60  0000 C CNN
+	1    8850 8450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8650 8300 8650 8400
+Wire Wire Line
+	8650 8400 8850 8400
+Wire Wire Line
+	8850 8400 8850 8450
+Wire Wire Line
+	8850 8400 9100 8400
+Wire Wire Line
+	9100 8400 9100 8300
+Connection ~ 8850 8400
+Wire Wire Line
+	9100 8100 9100 7950
+Wire Wire Line
+	9100 7950 8850 7950
+Wire Wire Line
+	8850 7950 8850 7900
+Wire Wire Line
+	8650 7950 8850 7950
+Connection ~ 8850 7950
+Text HLabel 7050 6700 0    50   Input ~ 0
+SD_CLK
+Text HLabel 7050 6400 0    50   Input ~ 0
+SD_CMD
+Text HLabel 7050 5950 0    50   Output ~ 0
+SD_SW
+Wire Wire Line
+	8650 8100 8650 7950
+$Comp
+L Device:CP_Small C400
+U 1 1 5BAA5BB9
+P 8650 8200
+F 0 "C400" H 8150 8350 50  0000 L CNN
+F 1 "10uF 10V" H 8150 8250 50  0000 L CNN
+F 2 "Capacitor_Tantalum_SMD:CP_EIA-1608-08_AVX-J" H 8688 8050 30  0001 C CNN
+F 3 "" H 8650 8200 60  0000 C CNN
+F 4 "VISHAY" H 8650 8200 50  0001 C CNN "MFG Name"
+F 5 "TP8M106M6R3C" H 8650 8200 50  0001 C CNN "MFG Part Num"
+F 6 "2425568" H 8650 8200 50  0001 C CNN "Distrib PN"
+F 7 "http://fr.farnell.com/vishay/tp8m106m6r3c/condensateur-tantale-10uf-6-3v/dp/2425568?st=10uF%200603" H 8650 8200 50  0001 C CNN "Distrib Link"
+F 8 "FARNELL" H 0   0   50  0001 C CNN "Distrib"
+	1    8650 8200
+	1    0    0    -1  
+$EndComp
+$EndSCHEMATC

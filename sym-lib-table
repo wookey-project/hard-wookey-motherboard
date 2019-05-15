@@ -1,0 +1,5 @@
+(sym_lib_table
+  (lib (name wookey-rescue)(type Legacy)(uri ${KIPRJMOD}/libs/wookey-rescue.lib)(options "")(descr ""))
+  (lib (name wookey-screen-rescue)(type Legacy)(uri ${KIPRJMOD}/libs/wookey-screen.lib)(options "")(descr ""))
+  (lib (name wookey)(type Legacy)(uri ${KIPRJMOD}/libs/wookey.lib)(options "")(descr ""))
+)

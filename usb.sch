@@ -1,0 +1,940 @@
+EESchema Schematic File Version 4
+LIBS:wookey-cache
+EELAYER 29 0
+EELAYER END
+$Descr A2 23386 16535
+encoding utf-8
+Sheet 2 6
+Title "Wookey-Project"
+Date "2019-05-13"
+Rev ""
+Comp "ANSSI"
+Comment1 "Designed by Mathieu RENARD"
+Comment2 "LICENCE: "
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L wookey:USB_OTG P3000
+U 1 1 5589C2A1
+P 5900 9250
+F 0 "P3000" V 6200 9200 50  0000 C CNN
+F 1 "USB_FS_OTG" H 5900 9450 50  0000 C CNN
+F 2 "wookey:USB_Micro-B-MOLEX_105017-0001" V 5850 9150 60  0001 C CNN
+F 3 "http://www.molex.com/pdm_docs/sd/1050170001_sd.pdf" V 5850 9150 60  0001 C CNN
+F 4 "MOLEX" H 5900 9250 60  0001 C CNN "MFG Name"
+F 5 "105017-0001" H 5900 9250 60  0001 C CNN "MFG Part Num"
+F 6 "2293836" H 5900 9250 60  0001 C CNN "Distrib PN"
+F 7 "http://fr.farnell.com/molex/105017-0001/embase-micro-usb-2-0-type-b-cms/dp/2293836" H 5900 9250 60  0001 C CNN "Distrib Link"
+F 8 "FARNELL" H 0   0   50  0001 C CNN "Distrib"
+	1    5900 9250
+	0    -1   -1   0   
+$EndComp
+$Comp
+L wookey:+3V3 #PWR0111
+U 1 1 5589C2A9
+P 15000 8600
+F 0 "#PWR0111" H 15000 8450 50  0001 C CNN
+F 1 "+3V3" H 15000 8740 50  0000 C CNN
+F 2 "" H 15000 8600 60  0000 C CNN
+F 3 "" H 15000 8600 60  0000 C CNN
+	1    15000 8600
+	1    0    0    -1  
+$EndComp
+$Comp
+L wookey:USBLC6-2 U600
+U 1 1 5589C2B7
+P 8300 4900
+F 0 "U600" H 8550 5100 60  0000 C CNN
+F 1 "USBLC6-2" H 8300 4700 60  0000 C CNN
+F 2 "Package_TO_SOT_SMD:TSOT-23-6" H 8300 4750 60  0001 C CNN
+F 3 "http://www.farnell.com/datasheets/1738051.pdf" H 8300 4750 60  0001 C CNN
+F 4 "STMICROELECTRONICS" H 8300 4900 60  0001 C CNN "MFG Name"
+F 5 "USBLC6-2SC6" H 8300 4900 60  0001 C CNN "MFG Part Num"
+F 6 "1269406" H 8300 4900 60  0001 C CNN "Distrib PN"
+F 7 "https://fr.farnell.com/stmicroelectronics/usblc6-2sc6/esd-protection-smd-sot-23-6/dp/1269406?ost=1269406" H 8300 4900 60  0001 C CNN "Distrib Link"
+F 8 "FARNELL" H 0   0   50  0001 C CNN "Distrib"
+	1    8300 4900
+	1    0    0    -1  
+$EndComp
+$Comp
+L wookey:USBLC6-2 U300
+U 1 1 5589C2B8
+P 7500 8800
+F 0 "U300" H 7300 9000 60  0000 C CNN
+F 1 "USBLC6-2" H 7500 8600 60  0000 C CNN
+F 2 "Package_TO_SOT_SMD:TSOT-23-6" H 7500 8650 60  0001 C CNN
+F 3 "http://www.farnell.com/datasheets/1738051.pdf" H 7500 8650 60  0001 C CNN
+F 4 "STMICROELECTRONICS" H 7500 8800 50  0001 C CNN "MFG Name"
+F 5 "USBLC6-2SC6" H 7500 8800 50  0001 C CNN "MFG Part Num"
+F 6 "1269406" H 7500 8800 50  0001 C CNN "Distrib PN"
+F 7 "https://fr.farnell.com/stmicroelectronics/usblc6-2sc6/esd-protection-smd-sot-23-6/dp/1269406?ost=1269406" H 7500 8800 50  0001 C CNN "Distrib Link"
+F 8 "FARNELL" H 7500 8800 50  0001 C CNN "Distrib"
+	1    7500 8800
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:CP_Small C201
+U 1 1 5589C2B9
+P 6400 8800
+F 0 "C201" H 6410 8870 50  0000 L CNN
+F 1 "4.7uF" H 6410 8720 50  0000 L CNN
+F 2 "Capacitor_Tantalum_SMD:CP_EIA-1608-08_AVX-J" H 6400 8800 60  0001 C CNN
+F 3 "" H 6400 8800 60  0000 C CNN
+F 4 "AVX" H 6400 8800 50  0001 C CNN "MFG Name"
+F 5 "TLCJ475M010XTA" H 6400 8800 50  0001 C CNN "MFG Part Num"
+F 6 "1658387" H 6400 8800 50  0001 C CNN "Distrib PN"
+F 7 "https://fr.farnell.com/avx/tlcj475m010xta/condensateur-4-7-f-10v-20-0603/dp/1658387" H 6400 8800 50  0001 C CNN "Distrib Link"
+F 8 "FARNELL" H 0   0   50  0001 C CNN "Distrib"
+	1    6400 8800
+	1    0    0    -1  
+$EndComp
+Text Label 10100 5450 0    60   ~ 0
+USB_FS_D+
+Text Label 10100 5550 0    60   ~ 0
+USB_FS_D-
+Text Label 10100 5650 0    60   ~ 0
+USB_FS_VBUS
+Text Label 9900 9250 0    60   ~ 0
+USB_HS_D+
+Text Label 9900 9350 0    60   ~ 0
+USB_HS_D-
+Text Label 9900 9450 0    60   ~ 0
+USB_HS_VBUS
+$Comp
+L Device:C_Small C806
+U 1 1 5589C2BC
+P 15700 8500
+F 0 "C806" H 15710 8570 50  0000 L CNN
+F 1 "100nF" H 15710 8420 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 15700 8500 60  0001 C CNN
+F 3 "" H 15700 8500 60  0000 C CNN
+F 4 "AVX" H 15700 8500 50  0001 C CNN "MFG Name"
+F 5 "0603YC104JAT2A" H 15700 8500 50  0001 C CNN "MFG Part Num"
+F 6 "FARNELL" H 0   0   50  0001 C CNN "Distrib"
+F 7 "https://fr.farnell.com/avx/0603yc104jat2a/condensateur-0-1-f-16v-5-x7r-0603/dp/1740612" H 0   0   50  0001 C CNN "Distrib Link"
+F 8 "1740612" H 0   0   50  0001 C CNN "Distrib PN"
+	1    15700 8500
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small C816
+U 1 1 5589C2BD
+P 16000 8500
+F 0 "C816" H 16010 8570 50  0000 L CNN
+F 1 "100nF" H 16010 8420 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 16000 8500 60  0001 C CNN
+F 3 "" H 16000 8500 60  0000 C CNN
+F 4 "FARNELL" H 0   0   50  0001 C CNN "Distrib"
+F 5 "https://fr.farnell.com/avx/0603yc104jat2a/condensateur-0-1-f-16v-5-x7r-0603/dp/1740612" H 0   0   50  0001 C CNN "Distrib Link"
+F 6 "1740612" H 0   0   50  0001 C CNN "Distrib PN"
+F 7 "AVX" H 0   0   50  0001 C CNN "MFG Name"
+F 8 "0603YC104JAT2A" H 0   0   50  0001 C CNN "MFG Part Num"
+	1    16000 8500
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small C825
+U 1 1 5589C2BE
+P 16300 8500
+F 0 "C825" H 16310 8570 50  0000 L CNN
+F 1 "100nF" H 16310 8420 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 16300 8500 60  0001 C CNN
+F 3 "" H 16300 8500 60  0000 C CNN
+F 4 "AVX" H 16300 8500 50  0001 C CNN "MFG Name"
+F 5 "0603YC104JAT2A" H 16300 8500 50  0001 C CNN "MFG Part Num"
+F 6 "FARNELL" H 0   0   50  0001 C CNN "Distrib"
+F 7 "https://fr.farnell.com/avx/0603yc104jat2a/condensateur-0-1-f-16v-5-x7r-0603/dp/1740612" H 0   0   50  0001 C CNN "Distrib Link"
+F 8 "1740612" H 0   0   50  0001 C CNN "Distrib PN"
+	1    16300 8500
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small C830
+U 1 1 5589C2BF
+P 16600 8500
+F 0 "C830" H 16610 8570 50  0000 L CNN
+F 1 "100nF" H 16610 8420 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 16600 8500 60  0001 C CNN
+F 3 "" H 16600 8500 60  0000 C CNN
+F 4 "AVX" H 16600 8500 50  0001 C CNN "MFG Name"
+F 5 "0603YC104JAT2A" H 16600 8500 50  0001 C CNN "MFG Part Num"
+F 6 "1740612" H 16600 8500 50  0001 C CNN "Distrib PN"
+F 7 "https://fr.farnell.com/avx/0603yc104jat2a/condensateur-0-1-f-16v-5-x7r-0603/dp/1740612" H 16600 8500 50  0001 C CNN "Distrib Link"
+F 8 "FARNELL" H 0   0   50  0001 C CNN "Distrib"
+	1    16600 8500
+	1    0    0    -1  
+$EndComp
+Text Label 13500 9300 0    60   ~ 0
+USB_HS_D-
+Text Label 13500 9400 0    60   ~ 0
+USB_HS_D+
+$Comp
+L Device:C_Small C828
+U 1 1 5589C2C3
+P 11700 9900
+F 0 "C828" H 11350 9950 50  0000 L CNN
+F 1 "0.01uF" H 11350 9850 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 11700 9900 60  0001 C CNN
+F 3 "http://www.farnell.com/datasheets/2600115.pdf" H 11700 9900 60  0001 C CNN
+F 4 "KEMET" H 11700 9900 50  0001 C CNN "MFG Name"
+F 5 "C0603C103K2RACTU" H 11700 9900 50  0001 C CNN "MFG Part Num"
+F 6 "1288254" H 11700 9900 50  0001 C CNN "Distrib PN"
+F 7 "https://fr.farnell.com/kemet/c0603c103k2ractu/cond-0-01-f-200v-10-x7r-0603/dp/1288254" H 11700 9900 50  0001 C CNN "Distrib Link"
+F 8 "FARNELL" H 11700 9900 50  0001 C CNN "Distrib"
+	1    11700 9900
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_Small R832
+U 1 1 5589C2C8
+P 14200 10850
+F 0 "R832" V 14280 10850 50  0000 C CNN
+F 1 "12K [1%]" V 14200 10850 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 14130 10850 30  0001 C CNN
+F 3 "http://www.farnell.com/datasheets/2099796.pdf" H 14200 10850 30  0001 C CNN
+F 4 "Vishay" H 14200 10850 50  0001 C CNN "MFG Name"
+F 5 "MCT06030C1202FP500" H 14200 10850 50  0001 C CNN "MFG Part Num"
+F 6 "2614416" H 14200 10850 50  0001 C CNN "Distrib PN"
+F 7 "http://fr.farnell.com/vishay/mct06030c1202fp500/res-couche-mince-12k-75v-1-0603/dp/2614416" H 14200 10850 50  0001 C CNN "Distrib Link"
+F 8 "FARNELL" H 0   0   50  0001 C CNN "Distrib"
+	1    14200 10850
+	1    0    0    -1  
+$EndComp
+$Comp
+L wookey:+3V3 #PWR0112
+U 1 1 5589C2CA
+P 14200 10400
+F 0 "#PWR0112" H 14200 10250 50  0001 C CNN
+F 1 "+3V3" H 14200 10540 50  0000 C CNN
+F 2 "" H 14200 10400 60  0000 C CNN
+F 3 "" H 14200 10400 60  0000 C CNN
+	1    14200 10400
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small C829
+U 1 1 5589C2CD
+P 16700 9050
+F 0 "C829" H 16710 9120 50  0000 L CNN
+F 1 "100nF" H 16710 8970 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 16700 9050 60  0001 C CNN
+F 3 "" H 16700 9050 60  0000 C CNN
+F 4 "AVX" H 16700 9050 50  0001 C CNN "MFG Name"
+F 5 "0603YC104JAT2A" H 16700 9050 50  0001 C CNN "MFG Part Num"
+F 6 "FARNELL" H 0   0   50  0001 C CNN "Distrib"
+F 7 "https://fr.farnell.com/avx/0603yc104jat2a/condensateur-0-1-f-16v-5-x7r-0603/dp/1740612" H 0   0   50  0001 C CNN "Distrib Link"
+F 8 "1740612" H 0   0   50  0001 C CNN "Distrib PN"
+	1    16700 9050
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small C8292
+U 1 1 5589C2CE
+P 16950 9050
+F 0 "C8292" H 16960 9120 50  0000 L CNN
+F 1 "4.7uF" H 16960 8970 50  0000 L CNN
+F 2 "Capacitor_Tantalum_SMD:CP_EIA-1608-08_AVX-J" H 16950 9050 60  0001 C CNN
+F 3 "" H 16950 9050 60  0000 C CNN
+F 4 "AVX" H 16950 9050 50  0001 C CNN "MFG Name"
+F 5 "TLCJ475M010XTA" H 16950 9050 50  0001 C CNN "MFG Part Num"
+F 6 "FARNELL" H 0   0   50  0001 C CNN "Distrib"
+F 7 "https://fr.farnell.com/avx/tlcj475m010xta/condensateur-4-7-f-10v-20-0603/dp/1658387" H 0   0   50  0001 C CNN "Distrib Link"
+F 8 "1658387" H 0   0   50  0001 C CNN "Distrib PN"
+	1    16950 9050
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small C826
+U 1 1 5589C2D0
+P 17250 9050
+F 0 "C826" H 17260 9120 50  0000 L CNN
+F 1 "100nF" H 17260 8970 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 17250 9050 60  0001 C CNN
+F 3 "" H 17250 9050 60  0000 C CNN
+F 4 "AVX" H 17250 9050 50  0001 C CNN "MFG Name"
+F 5 "0603YC104JAT2A" H 17250 9050 50  0001 C CNN "MFG Part Num"
+F 6 "FARNELL" H 0   0   50  0001 C CNN "Distrib"
+F 7 "https://fr.farnell.com/avx/0603yc104jat2a/condensateur-0-1-f-16v-5-x7r-0603/dp/1740612" H 0   0   50  0001 C CNN "Distrib Link"
+F 8 "1740612" H 0   0   50  0001 C CNN "Distrib PN"
+	1    17250 9050
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small C815
+U 1 1 5589C2D1
+P 17500 9050
+F 0 "C815" H 17510 9120 50  0000 L CNN
+F 1 "4.7uF" H 17510 8970 50  0000 L CNN
+F 2 "Capacitor_Tantalum_SMD:CP_EIA-1608-08_AVX-J" H 17500 9050 60  0001 C CNN
+F 3 "" H 17500 9050 60  0000 C CNN
+F 4 "AVX" H 17500 9050 50  0001 C CNN "MFG Name"
+F 5 "TLCJ475M010XTA" H 17500 9050 50  0001 C CNN "MFG Part Num"
+F 6 "FARNELL" H 0   0   50  0001 C CNN "Distrib"
+F 7 "https://fr.farnell.com/avx/tlcj475m010xta/condensateur-4-7-f-10v-20-0603/dp/1658387" H 0   0   50  0001 C CNN "Distrib Link"
+F 8 "1658387" H 0   0   50  0001 C CNN "Distrib PN"
+	1    17500 9050
+	1    0    0    -1  
+$EndComp
+Text Label 13500 9200 0    60   ~ 0
+USB_HS_VBUS
+Text Notes 5400 7650 0    81   ~ 16
+USB HIGH SPEED
+Text Notes 5400 4100 0    81   ~ 16
+USB FULLSPEED
+$Comp
+L Device:C_Small C305
+U 1 1 55A80257
+P 8400 8900
+F 0 "C305" H 8410 8970 50  0000 L CNN
+F 1 "100nF" H 8410 8820 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 8400 8900 60  0001 C CNN
+F 3 "" H 8400 8900 60  0000 C CNN
+F 4 "AVX" H 8400 8900 50  0001 C CNN "MFG Name"
+F 5 "0603YC104JAT2A" H 8400 8900 50  0001 C CNN "MFG Part Num"
+F 6 "FARNELL" H 0   0   50  0001 C CNN "Distrib"
+F 7 "https://fr.farnell.com/avx/0603yc104jat2a/condensateur-0-1-f-16v-5-x7r-0603/dp/1740612" H 0   0   50  0001 C CNN "Distrib Link"
+F 8 "1740612" H 0   0   50  0001 C CNN "Distrib PN"
+	1    8400 8900
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small C605
+U 1 1 55A81EFF
+P 9200 5000
+F 0 "C605" H 9210 5070 50  0000 L CNN
+F 1 "100nF" H 9210 4920 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 9200 5000 60  0001 C CNN
+F 3 "" H 9200 5000 60  0000 C CNN
+F 4 "AVX" H 9200 5000 50  0001 C CNN "MFG Name"
+F 5 "0603YC104JAT2A" H 9200 5000 50  0001 C CNN "MFG Part Num"
+F 6 "FARNELL" H 0   0   50  0001 C CNN "Distrib"
+F 7 "https://fr.farnell.com/avx/0603yc104jat2a/condensateur-0-1-f-16v-5-x7r-0603/dp/1740612" H 0   0   50  0001 C CNN "Distrib Link"
+F 8 "1740612" H 0   0   50  0001 C CNN "Distrib PN"
+	1    9200 5000
+	1    0    0    -1  
+$EndComp
+Text Label 6200 5550 0    81   ~ 0
+USB_FS_CON_D-
+Text Label 6200 5450 0    81   ~ 0
+USB_FS_CON_D+
+Text Label 6200 9350 0    81   ~ 0
+USB_HS_CON_D-
+Text Label 6200 9250 0    81   ~ 0
+USB_HS_CON_D+
+$Comp
+L wookey:GND #PWR0113
+U 1 1 55B6A459
+P 6000 4400
+F 0 "#PWR0113" H 6000 4150 50  0001 C CNN
+F 1 "GND" H 6000 4250 50  0000 C CNN
+F 2 "" H 6000 4400 60  0000 C CNN
+F 3 "" H 6000 4400 60  0000 C CNN
+	1    6000 4400
+	1    0    0    -1  
+$EndComp
+$Comp
+L wookey:GND #PWR0114
+U 1 1 55BA9623
+P 6050 8250
+F 0 "#PWR0114" H 6050 8000 50  0001 C CNN
+F 1 "GND" H 6050 8100 50  0000 C CNN
+F 2 "" H 6050 8250 60  0000 C CNN
+F 3 "" H 6050 8250 60  0000 C CNN
+	1    6050 8250
+	1    0    0    -1  
+$EndComp
+$Comp
+L wookey:GND #PWR0115
+U 1 1 55BAC01A
+P 14200 11100
+F 0 "#PWR0115" H 14200 10850 50  0001 C CNN
+F 1 "GND" H 14200 10950 50  0000 C CNN
+F 2 "" H 14200 11100 60  0000 C CNN
+F 3 "" H 14200 11100 60  0000 C CNN
+	1    14200 11100
+	1    0    0    -1  
+$EndComp
+$Comp
+L wookey:GND #PWR0116
+U 1 1 55BAC5A7
+P 15100 11100
+F 0 "#PWR0116" H 15100 10850 50  0001 C CNN
+F 1 "GND" H 15100 10950 50  0000 C CNN
+F 2 "" H 15100 11100 60  0000 C CNN
+F 3 "" H 15100 11100 60  0000 C CNN
+	1    15100 11100
+	1    0    0    -1  
+$EndComp
+$Comp
+L wookey:GND #PWR0117
+U 1 1 55BAC6CC
+P 11950 10400
+F 0 "#PWR0117" H 11950 10150 50  0001 C CNN
+F 1 "GND" H 11950 10250 50  0000 C CNN
+F 2 "" H 11950 10400 60  0000 C CNN
+F 3 "" H 11950 10400 60  0000 C CNN
+	1    11950 10400
+	1    0    0    -1  
+$EndComp
+$Comp
+L wookey:GND #PWR0119
+U 1 1 55BACFB6
+P 17400 9250
+F 0 "#PWR0119" H 17400 9000 50  0001 C CNN
+F 1 "GND" H 17400 9100 50  0000 C CNN
+F 2 "" H 17400 9250 60  0000 C CNN
+F 3 "" H 17400 9250 60  0000 C CNN
+	1    17400 9250
+	1    0    0    -1  
+$EndComp
+$Comp
+L wookey:GND #PWR0120
+U 1 1 55BAD543
+P 16800 9250
+F 0 "#PWR0120" H 16800 9000 50  0001 C CNN
+F 1 "GND" H 16800 9100 50  0000 C CNN
+F 2 "" H 16800 9250 60  0000 C CNN
+F 3 "" H 16800 9250 60  0000 C CNN
+	1    16800 9250
+	1    0    0    -1  
+$EndComp
+$Comp
+L wookey:GND #PWR0121
+U 1 1 55BAD668
+P 16150 8800
+F 0 "#PWR0121" H 16150 8550 50  0001 C CNN
+F 1 "GND" H 16150 8650 50  0000 C CNN
+F 2 "" H 16150 8800 60  0000 C CNN
+F 3 "" H 16150 8800 60  0000 C CNN
+	1    16150 8800
+	1    0    0    -1  
+$EndComp
+Text Label -16800 27400 0    81   ~ 0
+ear
+$Comp
+L wookey:USB_OTG P6000
+U 1 1 58A45C1E
+P 5850 5450
+F 0 "P6000" V 6150 5400 50  0000 C CNN
+F 1 "USB_FS_OTG" H 5850 5650 50  0000 C CNN
+F 2 "wookey:USB_Micro-B-MOLEX_105017-0001" V 5800 5350 60  0001 C CNN
+F 3 "http://www.molex.com/pdm_docs/sd/1050170001_sd.pdf" V 5800 5350 60  0001 C CNN
+F 4 "MOLEX" H 5850 5450 60  0001 C CNN "MFG Name"
+F 5 "105017-0001" H 5850 5450 60  0001 C CNN "MFG Part Num"
+F 6 "2293836" H 5850 5450 60  0001 C CNN "Distrib PN"
+F 7 "http://fr.farnell.com/molex/105017-0001/embase-micro-usb-2-0-type-b-cms/dp/2293836" H 5850 5450 60  0001 C CNN "Distrib Link"
+F 8 "FARNELL" H 0   0   50  0001 C CNN "Distrib"
+	1    5850 5450
+	0    -1   -1   0   
+$EndComp
+NoConn ~ 14300 10100
+NoConn ~ 14300 10200
+NoConn ~ 6200 9150
+NoConn ~ 6150 5350
+NoConn ~ 14300 9500
+Wire Notes Line
+	5350 5900 5350 3950
+Wire Notes Line
+	10750 5900 5350 5900
+Wire Notes Line
+	10750 3950 10750 5900
+Wire Notes Line
+	5350 3950 10750 3950
+Wire Wire Line
+	14300 9200 13500 9200
+Connection ~ 17400 8950
+Connection ~ 16450 9100
+Wire Wire Line
+	17250 8950 17400 8950
+Wire Wire Line
+	17400 8850 17400 8950
+Wire Wire Line
+	16450 8850 17400 8850
+Wire Wire Line
+	16450 8850 16450 9100
+Connection ~ 16850 8950
+Wire Wire Line
+	16700 8950 16850 8950
+Wire Wire Line
+	16850 8900 16850 8950
+Wire Wire Line
+	16550 8900 16850 8900
+Wire Wire Line
+	16550 9300 16550 8900
+Wire Wire Line
+	15900 9300 16550 9300
+Wire Wire Line
+	17250 9200 17400 9200
+Wire Wire Line
+	17500 9200 17500 9150
+Wire Wire Line
+	17250 9200 17250 9150
+Wire Wire Line
+	16700 9200 16800 9200
+Wire Wire Line
+	16950 9200 16950 9150
+Wire Wire Line
+	16700 9200 16700 9150
+Wire Wire Line
+	14300 10400 14200 10400
+Wire Wire Line
+	14200 10950 14200 11100
+Wire Wire Line
+	14200 10600 14200 10750
+Wire Wire Line
+	14300 10600 14200 10600
+Connection ~ 16150 8750
+Wire Wire Line
+	16150 8750 16150 8800
+Connection ~ 16000 8750
+Wire Wire Line
+	16000 8600 16000 8750
+Connection ~ 16300 8750
+Wire Wire Line
+	16300 8750 16300 8600
+Wire Wire Line
+	16600 8750 16600 8600
+Wire Wire Line
+	15700 8750 16000 8750
+Wire Wire Line
+	15700 8600 15700 8750
+Connection ~ 15200 8600
+Connection ~ 15700 8300
+Wire Wire Line
+	15400 8600 15400 8300
+Connection ~ 16000 8300
+Wire Wire Line
+	16000 8300 16000 8400
+Connection ~ 16300 8300
+Wire Wire Line
+	15700 8400 15700 8300
+Wire Wire Line
+	16300 8300 16300 8400
+Wire Wire Line
+	15400 8300 15700 8300
+Wire Wire Line
+	16600 8300 16600 8400
+Wire Wire Line
+	14300 9300 13500 9300
+Wire Wire Line
+	14300 9400 13500 9400
+Wire Wire Line
+	6600 8800 7050 8800
+Wire Wire Line
+	6600 9050 6600 8800
+Connection ~ 6250 8550
+Wire Wire Line
+	6400 8550 6400 8700
+Connection ~ 6400 9450
+Wire Wire Line
+	6400 8900 6400 9450
+Wire Wire Line
+	5750 4300 6000 4300
+Connection ~ 9050 5650
+Wire Wire Line
+	9050 5650 9050 4900
+Wire Wire Line
+	8750 4900 9050 4900
+Wire Wire Line
+	6150 5650 9050 5650
+Wire Wire Line
+	6950 5250 6950 4900
+Wire Wire Line
+	6150 5250 6300 5250
+Connection ~ 8150 9450
+Wire Wire Line
+	8150 9450 8150 8800
+Wire Wire Line
+	6200 9450 6400 9450
+Wire Wire Line
+	6200 9350 6700 9350
+Wire Wire Line
+	8250 9350 9900 9350
+Wire Wire Line
+	8050 9250 9900 9250
+Wire Wire Line
+	7400 5550 6150 5550
+Wire Wire Line
+	6250 8200 6250 8550
+Wire Wire Line
+	6200 9050 6250 9050
+Wire Wire Line
+	5750 4300 5750 5050
+Wire Wire Line
+	6250 8550 6400 8550
+Wire Wire Line
+	15900 9100 16450 9100
+Wire Wire Line
+	16450 9200 15900 9200
+Connection ~ 15100 11100
+Wire Wire Line
+	15100 11000 15100 11100
+Wire Wire Line
+	15200 11100 15200 11000
+Wire Wire Line
+	15000 11100 15100 11100
+Wire Wire Line
+	15000 11000 15000 11100
+Connection ~ 15100 8600
+Wire Wire Line
+	15100 8600 15100 8800
+Wire Wire Line
+	15000 8800 15000 8600
+Connection ~ 15000 8600
+Wire Wire Line
+	15200 8600 15200 8800
+Wire Wire Line
+	14900 8600 15000 8600
+Wire Wire Line
+	14900 8600 14900 8800
+Wire Notes Line
+	5350 7500 19000 7500
+Wire Notes Line
+	19000 11750 5350 11750
+Wire Notes Line
+	5350 11750 5350 7500
+Wire Wire Line
+	7950 8800 8150 8800
+Wire Wire Line
+	8400 9050 8400 9000
+Connection ~ 6600 9050
+Connection ~ 8150 8800
+Wire Wire Line
+	9200 5250 9200 5100
+Connection ~ 6950 5250
+Connection ~ 9050 4900
+Wire Wire Line
+	7400 4800 7400 5550
+Wire Wire Line
+	6150 5450 7350 5450
+Wire Wire Line
+	7350 5450 7350 5000
+Wire Wire Line
+	6650 9250 6200 9250
+Wire Wire Line
+	8050 8700 7950 8700
+Wire Wire Line
+	7950 8900 8250 8900
+Wire Wire Line
+	17400 9250 17400 9200
+Connection ~ 17400 9200
+Wire Wire Line
+	16800 9250 16800 9200
+Connection ~ 16800 9200
+Wire Wire Line
+	6950 4900 7850 4900
+Wire Wire Line
+	6650 8700 7050 8700
+Connection ~ 6250 9050
+Wire Wire Line
+	8050 9250 8050 8700
+Wire Wire Line
+	8250 8900 8250 9350
+Wire Wire Line
+	6700 9350 6700 8900
+Wire Wire Line
+	6650 9250 6650 8700
+Wire Wire Line
+	6700 8900 7050 8900
+Wire Wire Line
+	8900 5000 8900 5450
+Wire Wire Line
+	5800 8200 5800 8850
+Wire Wire Line
+	5800 8200 6050 8200
+Wire Wire Line
+	6300 4300 6300 5250
+Connection ~ 6300 5250
+Wire Wire Line
+	6050 8250 6050 8200
+Wire Wire Line
+	6000 4300 6000 4400
+Connection ~ 6000 4300
+Connection ~ 6050 8200
+Wire Wire Line
+	7400 4800 7850 4800
+Wire Wire Line
+	7350 5000 7850 5000
+Wire Wire Line
+	8750 5000 8900 5000
+Wire Wire Line
+	8800 5550 8800 4800
+Wire Wire Line
+	8800 4800 8750 4800
+Wire Wire Line
+	17400 8950 17500 8950
+Wire Wire Line
+	16450 9100 16450 9200
+Wire Wire Line
+	16850 8950 16950 8950
+Wire Wire Line
+	16150 8750 16300 8750
+Wire Wire Line
+	16000 8750 16150 8750
+Wire Wire Line
+	16300 8750 16600 8750
+Wire Wire Line
+	15200 8600 15400 8600
+Wire Wire Line
+	15700 8300 16000 8300
+Wire Wire Line
+	16000 8300 16300 8300
+Wire Wire Line
+	16300 8300 16600 8300
+Wire Wire Line
+	6250 8550 6250 9050
+Wire Wire Line
+	6400 9450 8150 9450
+Wire Wire Line
+	15100 11100 15200 11100
+Wire Wire Line
+	15100 8600 15200 8600
+Wire Wire Line
+	15000 8600 15100 8600
+Wire Wire Line
+	6600 9050 8400 9050
+Wire Wire Line
+	8150 8800 8400 8800
+Wire Wire Line
+	6950 5250 9200 5250
+Wire Wire Line
+	9050 4900 9200 4900
+Wire Wire Line
+	17400 9200 17500 9200
+Wire Wire Line
+	16800 9200 16950 9200
+Wire Wire Line
+	6250 9050 6600 9050
+Wire Wire Line
+	6300 5250 6950 5250
+Wire Wire Line
+	6000 4300 6300 4300
+Wire Wire Line
+	6050 8200 6250 8200
+$Comp
+L wookey:USB3300 U800
+U 1 1 5589C2C1
+P 15100 9900
+F 0 "U800" H 15100 9950 50  0000 C CNN
+F 1 "USB3300" H 15100 9850 50  0000 C CNN
+F 2 "Package_DFN_QFN:QFN-32-1EP_5x5mm_P0.5mm_EP3.1x3.1mm_ThermalVias" H 15100 9900 60  0001 C CNN
+F 3 "http://www.farnell.com/datasheets/2138036.pdf" H 15100 9900 60  0001 C CNN
+F 4 "MICROCHIP" H 15100 9900 60  0001 C CNN "MFG Name"
+F 5 "USB3300-EZK" H 15100 9900 60  0001 C CNN "MFG Part Num"
+F 6 "2292614" H 15100 9900 60  0001 C CNN "Distrib PN"
+F 7 "http://fr.farnell.com/microchip/usb3300-ezk/ic-usb-2-0-ulpi-phy-w-otg-32vqfn/dp/2292614" H 15100 9900 60  0001 C CNN "Distrib Link"
+F 8 "FARNELL" H 15100 9900 50  0001 C CNN "Distrib"
+	1    15100 9900
+	1    0    0    -1  
+$EndComp
+Text Notes 15850 11250 0    50   ~ 0
+Optional active high transceiver reset. \nThis is the same as a write to the ULPI Reset, \naddress 04h, bit 5. This does not reset the ULPI \nregister set. This pin includes an integrated pull-down \nresistor to ground. If not used, this pin can be floated \nor connected to ground (recommended).
+$Comp
+L Connector_Generic:Conn_01x01 P828
+U 1 1 5ACF7BDC
+P 13000 9350
+F 0 "P828" H 13150 9350 50  0000 C CNN
+F 1 "XI" H 13350 9350 50  0000 C CNN
+F 2 "Measurement_Points:Measurement_Point_Round-SMD-Pad_Small" H 13000 9350 60  0001 C CNN
+F 3 "" H 13000 9350 60  0000 C CNN
+	1    13000 9350
+	0    -1   -1   0   
+$EndComp
+Text HLabel 10850 5450 2    50   BiDi ~ 0
+USB_FS_D+
+Text HLabel 10850 5550 2    50   BiDi ~ 0
+USB_FS_D-
+Text HLabel 10850 5650 2    50   UnSpc ~ 0
+USB_FS_VBUS
+Wire Wire Line
+	8900 5450 10850 5450
+Wire Wire Line
+	8800 5550 10850 5550
+Wire Wire Line
+	9050 5650 10850 5650
+Text HLabel 10600 9450 2    50   UnSpc ~ 0
+USB_HS_VBUS
+Wire Wire Line
+	8150 9450 10600 9450
+$Comp
+L wookey:+3V3 #PWR0122
+U 1 1 5B0CCB6A
+P 18750 9000
+F 0 "#PWR0122" H 18750 8850 50  0001 C CNN
+F 1 "+3V3" H 18750 9140 50  0000 C CNN
+F 2 "" H 18750 9000 60  0000 C CNN
+F 3 "" H 18750 9000 60  0000 C CNN
+	1    18750 9000
+	1    0    0    -1  
+$EndComp
+$Comp
+L wookey:GND #PWR0123
+U 1 1 5B0CCC51
+P 18750 9200
+F 0 "#PWR0123" H 18750 8950 50  0001 C CNN
+F 1 "GND" H 18750 9050 50  0000 C CNN
+F 2 "" H 18750 9200 60  0000 C CNN
+F 3 "" H 18750 9200 60  0000 C CNN
+	1    18750 9200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	18750 9200 18750 9150
+Wire Wire Line
+	18750 9150 19150 9150
+Wire Wire Line
+	18750 9000 18750 9050
+Wire Wire Line
+	18750 9050 19150 9050
+Text HLabel 19150 9050 2    50   UnSpc ~ 0
++3V3
+Text HLabel 19150 9150 2    50   UnSpc ~ 0
+GND
+$Comp
+L wookey:ASE-xxxMHz-Oscillator Y2
+U 1 1 5B9F8C34
+P 12400 9900
+F 0 "Y2" H 12741 9946 50  0000 L CNN
+F 1 "ASEMB-24.000MHZ-LY-T" H 12741 9855 50  0000 L CNN
+F 2 "Oscillator:Oscillator_SMD_Abracon_ASE-4Pin_3.2x2.5mm" H 13100 9550 50  0001 C CNN
+F 3 "http://www.farnell.com/datasheets/2581438.pdf" H 12300 9900 50  0001 C CNN
+F 4 "ABRACON" H 12400 9900 50  0001 C CNN "MFG Name"
+F 5 "ASEMB-24.000MHZ-LY-T" H 12400 9900 50  0001 C CNN "MFG Part Num"
+F 6 "2467910" H 12400 9900 50  0001 C CNN "Distrib PN"
+F 7 "https://farnell.com/abracon/asemb-24-000mhz-ly-t/oscil-mems-24mhz-3-2-x-2-5mm-lvcmos/dp/2467910" H 12400 9900 50  0001 C CNN "Distrib Link"
+F 8 "FARNELL" H 12400 9900 50  0001 C CNN "Distrib"
+	1    12400 9900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	11700 10000 11700 10300
+Wire Wire Line
+	12300 10300 12300 10200
+Wire Wire Line
+	11950 10400 11950 10300
+Connection ~ 11950 10300
+Wire Wire Line
+	11950 10300 12300 10300
+Wire Wire Line
+	11700 9800 11700 9500
+Wire Wire Line
+	11700 9500 11850 9500
+Wire Wire Line
+	12300 9500 12300 9600
+Wire Wire Line
+	12000 9500 12000 9350
+Connection ~ 12000 9500
+Wire Wire Line
+	12000 9500 12300 9500
+Wire Wire Line
+	14300 9900 13000 9900
+Wire Wire Line
+	13000 9550 13000 9900
+Connection ~ 13000 9900
+Wire Wire Line
+	13000 9900 12700 9900
+$Comp
+L wookey:+3V3 #PWR0118
+U 1 1 5BB413A1
+P 12000 9350
+F 0 "#PWR0118" H 12000 9200 50  0001 C CNN
+F 1 "+3V3" H 12000 9490 50  0000 C CNN
+F 2 "" H 12000 9350 60  0000 C CNN
+F 3 "" H 12000 9350 60  0000 C CNN
+	1    12000 9350
+	1    0    0    -1  
+$EndComp
+NoConn ~ 14300 9700
+Wire Wire Line
+	11900 9900 11850 9900
+Wire Wire Line
+	11700 10300 11950 10300
+Wire Wire Line
+	11850 9900 11850 9500
+Connection ~ 11850 9500
+Wire Wire Line
+	11850 9500 12000 9500
+Text Notes 10800 10700 0    50   ~ 0
+see qtzcry-app-notes.pdf (in datasheets)
+Text HLabel 19150 10600 2    50   Output ~ 0
+USB_HS_ULPI_CLK
+Text HLabel 19150 10700 2    50   Input ~ 0
+USB_HS_ULPI_HARD_RESET
+Text HLabel 19150 10500 2    50   Input ~ 0
+USB_HS_ULPI_STP
+Text HLabel 19150 10400 2    50   Input ~ 0
+USB_HS_ULPI_DIR
+Text HLabel 19150 10300 2    50   Input ~ 0
+USB_HS_ULPI_NXT
+Text HLabel 19150 10200 2    50   BiDi ~ 0
+USB_HS_ULPI_D0
+Text HLabel 19150 10100 2    50   BiDi ~ 0
+USB_HS_ULPI_D1
+Text HLabel 19150 10000 2    50   BiDi ~ 0
+USB_HS_ULPI_D2
+Text HLabel 19150 9900 2    50   BiDi ~ 0
+USB_HS_ULPI_D3
+Text HLabel 19150 9800 2    50   BiDi ~ 0
+USB_HS_ULPI_D4
+Text HLabel 19150 9700 2    50   BiDi ~ 0
+USB_HS_ULPI_D5
+Text HLabel 19150 9600 2    50   BiDi ~ 0
+USB_HS_ULPI_D6
+Text HLabel 19150 9500 2    50   BiDi ~ 0
+USB_HS_ULPI_D7
+Text Label 16100 10700 0    50   ~ 0
+HS_GPIO_HARD_RESET
+Wire Wire Line
+	15900 10700 19150 10700
+Wire Notes Line
+	19000 7500 19000 11750
+Wire Wire Line
+	15900 10200 19150 10200
+Wire Wire Line
+	15900 10100 19150 10100
+Wire Wire Line
+	15900 10000 19150 10000
+Wire Wire Line
+	15900 9900 19150 9900
+Wire Wire Line
+	15900 9800 19150 9800
+Wire Wire Line
+	15900 9700 19150 9700
+Wire Wire Line
+	15900 9600 19150 9600
+Wire Wire Line
+	15900 9500 19150 9500
+Wire Wire Line
+	15900 10600 19150 10600
+Wire Wire Line
+	15900 10300 19150 10300
+Wire Wire Line
+	15900 10400 19150 10400
+Wire Wire Line
+	15900 10500 19150 10500
+Text Label 16100 10600 0    60   ~ 0
+HS_ULPI_CLK_PA5
+Text Label 16100 10500 0    60   ~ 0
+HS_ULPI_STP_PC0
+Text Label 16100 10400 0    60   ~ 0
+HS_ULPI_DIR_PC2
+Text Label 16100 10300 0    60   ~ 0
+HS_ULPI_NXT_PC3
+Text Label 16100 10200 0    60   ~ 0
+HS_ULPI_D0_PA3
+Text Label 16100 10100 0    60   ~ 0
+HS_ULPI_D1_PB0
+Text Label 16100 10000 0    60   ~ 0
+HS_ULPI_D2_PB1
+Text Label 16100 9900 0    60   ~ 0
+HS_ULPI_D3_PB10
+Text Label 16100 9800 0    60   ~ 0
+HS_ULPI_D4_PB11
+Text Label 16100 9600 0    60   ~ 0
+HS_ULPI_D6_PB13
+Text Label 16100 9500 0    60   ~ 0
+HS_ULPI_D7_PB5
+Text Label 16100 9700 0    60   ~ 0
+HS_ULPI_D5_PB12
+$EndSCHEMATC

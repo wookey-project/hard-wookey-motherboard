@@ -1,0 +1,229 @@
+EESchema Schematic File Version 4
+LIBS:wookey-cache
+EELAYER 29 0
+EELAYER END
+$Descr A2 23386 16535
+encoding utf-8
+Sheet 5 6
+Title "Wookey-Project"
+Date "2019-05-13"
+Rev ""
+Comp "ANSSI"
+Comment1 "Designed by Mathieu RENARD"
+Comment2 "LICENCE: "
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L wookey:ISO7816_NO P1000
+U 1 1 583DE412
+P 11350 8000
+F 0 "P1000" H 11350 8300 60  0000 C CNN
+F 1 "ISO7816_NO" H 11350 7350 60  0000 C CNN
+F 2 "wookey:VJW53666" H 11350 8000 30  0001 C CNN
+F 3 "http://fr.rs-online.com/web/p/supports-de-carte-sim-et-memoire/5427911/" H 11350 8000 30  0001 C CNN
+F 4 "Amphenol FCI" H 11350 8000 60  0001 C CNN "MFG Name"
+F 5 "7312P0225A13LF" H 11350 8000 60  0001 C CNN "MFG Part Num"
+F 6 "542-7911" H 11350 8000 60  0001 C CNN "Distrib PN"
+F 7 "http://fr.rs-online.com/web/p/supports-de-carte-sim-et-memoire/5427911/" H 11350 8000 60  0001 C CNN "Distrib Link"
+F 8 "RS" H 11350 8000 50  0001 C CNN "Distrib"
+	1    11350 8000
+	1    0    0    -1  
+$EndComp
+$Comp
+L wookey:GND #PWR0128
+U 1 1 583E1B51
+P 12050 8950
+F 0 "#PWR0128" H 12050 8700 50  0001 C CNN
+F 1 "GND" H 12050 8800 50  0000 C CNN
+F 2 "" H 12050 8950 60  0000 C CNN
+F 3 "" H 12050 8950 60  0000 C CNN
+	1    12050 8950
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_Small R1001
+U 1 1 583E2AD0
+P 10500 7650
+F 0 "R1001" V 10580 7650 50  0000 C CNN
+F 1 "10K" V 10500 7650 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 10430 7650 30  0001 C CNN
+F 3 "" H 10500 7650 30  0000 C CNN
+F 4 "FARNELL" H 0   -50 50  0001 C CNN "Distrib"
+F 5 "https://fr.farnell.com/vishay/crcw060310k0fkeahp/res-couche-epaisse-10k-1-0-25w/dp/1738918" H 0   -50 50  0001 C CNN "Distrib Link"
+F 6 "1738918" H 0   -50 50  0001 C CNN "Distrib PN"
+F 7 "Vishay" H 0   -50 50  0001 C CNN "MFG Name"
+F 8 "CRCW060310K0FKEAHP" H 0   -50 50  0001 C CNN "MFG Part Num"
+	1    10500 7650
+	1    0    0    -1  
+$EndComp
+Text Label 9900 8450 0    60   ~ 0
+CARD_CT
+Text Label 9850 7950 0    60   ~ 0
+CARD_RESET
+Text Label 12850 8050 2    60   ~ 0
+UART2_CARD_IO
+Text Label 9850 8050 0    60   ~ 0
+UART2_CARD_CLK
+Text Label -16800 27400 0    81   ~ 0
+ear
+Text Label 12850 7950 2    60   ~ 0
+CARD_VPP
+Wire Wire Line
+	10900 8050 9500 8050
+Wire Wire Line
+	11800 7950 12850 7950
+Wire Wire Line
+	11800 8050 12850 8050
+Wire Wire Line
+	11800 7850 12050 7850
+Wire Wire Line
+	12050 7850 12050 8450
+Wire Wire Line
+	11800 8450 12050 8450
+Connection ~ 12050 8450
+Wire Wire Line
+	9500 7950 10900 7950
+Wire Wire Line
+	10700 7850 10900 7850
+Wire Wire Line
+	10500 7750 10500 8450
+Wire Wire Line
+	9500 8450 10500 8450
+Connection ~ 10500 8450
+$Comp
+L Device:C_Small C1002
+U 1 1 583F1618
+P 12100 7150
+F 0 "C1002" H 12125 7250 50  0000 L CNN
+F 1 "100nF" H 12125 7050 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 12138 7000 30  0001 C CNN
+F 3 "" H 12100 7150 60  0000 C CNN
+F 4 "AVX" H 12100 7150 50  0001 C CNN "MFG Name"
+F 5 "0603YC104JAT2A" H 12100 7150 50  0001 C CNN "MFG Part Num"
+F 6 "FARNELL" H 0   0   50  0001 C CNN "Distrib"
+F 7 "https://fr.farnell.com/avx/0603yc104jat2a/condensateur-0-1-f-16v-5-x7r-0603/dp/1740612" H 0   0   50  0001 C CNN "Distrib Link"
+F 8 "1740612" H 0   0   50  0001 C CNN "Distrib PN"
+	1    12100 7150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	12100 7350 12100 7250
+Connection ~ 11950 7350
+$Comp
+L wookey:GND #PWR0129
+U 1 1 583F161E
+P 11950 7350
+F 0 "#PWR0129" H 11950 7100 50  0001 C CNN
+F 1 "GND" H 11950 7200 50  0000 C CNN
+F 2 "" H 11950 7350 60  0000 C CNN
+F 3 "" H 11950 7350 60  0000 C CNN
+	1    11950 7350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	11800 7350 11950 7350
+Wire Wire Line
+	11800 7250 11800 7350
+$Comp
+L Device:CP_Small C1001
+U 1 1 583F162A
+P 11800 7150
+F 0 "C1001" H 11825 7250 50  0000 L CNN
+F 1 "10uF" H 11825 7050 50  0000 L CNN
+F 2 "Capacitor_Tantalum_SMD:CP_EIA-1608-08_AVX-J" H 11838 7000 30  0001 C CNN
+F 3 "" H 11800 7150 60  0000 C CNN
+F 4 "AVX" H 11800 7150 50  0001 C CNN "MFG Name"
+F 5 "F981A106MMA" H 11800 7150 50  0001 C CNN "MFG Part Num"
+F 6 "2747667" H 11800 7150 50  0001 C CNN "Distrib PN"
+F 7 "https://fr.farnell.com/avx/f981a106mma/condensateur-10-f-10v-20/dp/2747667" H 11800 7150 50  0001 C CNN "Distrib Link"
+F 8 "FARNELL" H 0   0   50  0001 C CNN "Distrib"
+	1    11800 7150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	10700 7000 9850 7000
+Text Label 9850 7000 0    60   ~ 0
+CARD_POWER
+Wire Wire Line
+	10500 7550 10500 7350
+$Comp
+L wookey:+3V3 #PWR0130
+U 1 1 5A023985
+P 10500 7350
+F 0 "#PWR0130" H 10500 7200 50  0001 C CNN
+F 1 "+3V3" H 10500 7490 50  0000 C CNN
+F 2 "" H 10500 7350 60  0000 C CNN
+F 3 "" H 10500 7350 60  0000 C CNN
+	1    10500 7350
+	1    0    0    -1  
+$EndComp
+Text Notes 9850 6900 0    60   ~ 0
+The smartcard is powered by U500 GPIO
+Wire Wire Line
+	12050 8450 12050 8950
+Wire Wire Line
+	10500 8450 10900 8450
+Wire Wire Line
+	11950 7350 12100 7350
+Wire Wire Line
+	10700 7000 10700 7850
+Connection ~ 10700 7000
+Text HLabel 9500 8450 0    50   Input ~ 0
+CARD_CT
+Text HLabel 9500 8050 0    50   Input ~ 0
+CARD_CLK
+Text HLabel 9500 7950 0    50   Input ~ 0
+CARD_RESET
+Text HLabel 9850 7000 0    50   UnSpc ~ 0
+CARD_POWER
+Text HLabel 12850 7950 2    50   Input ~ 0
+CARD_VPP
+Text HLabel 12850 8050 2    50   BiDi ~ 0
+CARD_IO
+$Comp
+L wookey:GND #PWR0131
+U 1 1 5B01D1B7
+P 10050 6400
+F 0 "#PWR0131" H 10050 6150 50  0001 C CNN
+F 1 "GND" H 10050 6250 50  0000 C CNN
+F 2 "" H 10050 6400 60  0000 C CNN
+F 3 "" H 10050 6400 60  0000 C CNN
+	1    10050 6400
+	1    0    0    -1  
+$EndComp
+$Comp
+L wookey:+3V3 #PWR0132
+U 1 1 5B01D334
+P 10050 6150
+F 0 "#PWR0132" H 10050 6000 50  0001 C CNN
+F 1 "+3V3" H 10050 6290 50  0000 C CNN
+F 2 "" H 10050 6150 60  0000 C CNN
+F 3 "" H 10050 6150 60  0000 C CNN
+	1    10050 6150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	10050 6400 10050 6300
+Wire Wire Line
+	10050 6300 9850 6300
+Wire Wire Line
+	10050 6150 10050 6200
+Wire Wire Line
+	10050 6200 9850 6200
+Text HLabel 9850 6300 0    50   UnSpc ~ 0
+GND
+Text HLabel 9850 6200 0    50   UnSpc ~ 0
++3V3
+NoConn ~ 11800 8150
+NoConn ~ 10900 8150
+Wire Wire Line
+	10700 7000 11800 7000
+Wire Wire Line
+	11800 7050 11800 7000
+Connection ~ 11800 7000
+Wire Wire Line
+	11800 7000 12100 7000
+Wire Wire Line
+	12100 7000 12100 7050
+$EndSCHEMATC
