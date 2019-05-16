@@ -1,6 +1,6 @@
 # WooKey Mainboard PCB
 
-![Pinout](/imgs/wookey-motherboard-3D.png)
+![Pinout](./imgs/wookey-motherboard-3D.png)
 
 
 ## Introduction
@@ -68,18 +68,18 @@ The directory name may differ according the project your are working with.
 
 ## PCB Pinout
 
-![Pinout](/imgs/wookey-motherboard-top-pinout.png)
+![Pinout](./imgs/wookey-motherboard-top-pinout.png)
 
 
 ## PCB Layers
 
 ### PCB TOP layer
 
-![TOP](/imgs/wookey-motherboard-top.png)
+![TOP](./imgs/wookey-motherboard-top.png)
 
 ### PCB BOTTOM layer
 
-![BOT](/imgs/wookey-motherboard-bot.png)
+![BOT](./imgs/wookey-motherboard-bot.png)
 
 
 ### Layers
