@@ -5,12 +5,12 @@ EELAYER END
 $Descr A3 16535 11693
 encoding utf-8
 Sheet 1 6
-Title "Wookey-Project"
-Date "2019-05-13"
+Title "Wookey Motherboard"
+Date "2019-05-16"
 Rev ""
 Comp "ANSSI"
 Comment1 "Designed by Mathieu RENARD"
-Comment2 "LICENCE: "
+Comment2 "LICENCE: CERN Open Hardware Licence v1.2"
 Comment3 ""
 Comment4 ""
 $EndDescr
