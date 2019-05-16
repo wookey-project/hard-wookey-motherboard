@@ -2252,7 +2252,7 @@
       (net 1 GND))
     (pad 6 thru_hole circle (at 3.4991 -0.13254 180) (size 2 2) (drill 1.4) (layers *.Cu *.SilkS *.Mask B.Paste)
       (net 1 GND))
-    (model ../../libs/3D/usb.wrl
+    (model ${KIPRJMOD}/libs/3D/usb.wrl
       (offset (xyz 0 0 1.269999980926514))
       (scale (xyz 0.42 0.42 0.42))
       (rotate (xyz 90 180 180))
@@ -2297,7 +2297,7 @@
       (net 1 GND))
     (pad 6 thru_hole circle (at 3.4991 -0.13254 180) (size 2 2) (drill 1.4) (layers *.Cu *.SilkS *.Mask B.Paste)
       (net 1 GND))
-    (model ../../libs/3D/usb.wrl
+    (model ${KIPRJMOD}/libs/3D/usb.wrl
       (offset (xyz 0 0 1.269999980926514))
       (scale (xyz 0.42 0.42 0.42))
       (rotate (xyz 90 180 180))
@@ -2382,7 +2382,7 @@
       (solder_mask_margin -0.3))
     (pad "" np_thru_hole circle (at -0.0254 0) (size 2.6 2.6) (drill 2.1) (layers *.Cu *.Mask)
       (solder_mask_margin -0.3))
-    (model ../../libs/3D/7312P0225A13LFC.wrl
+    (model ${KIPRJMOD}/libs/3D/7312P0225A13LFC.wrl
       (offset (xyz -26.66999959945679 -9.905999851226809 -0.7619999885559082))
       (scale (xyz 0.3937 0.3937 0.3937))
       (rotate (xyz 0 -90 90))
@@ -2732,7 +2732,7 @@
       (net 78 /cpu/SPI_MOSI))
     (pad 1 smd rect (at -3.75 0) (size 0.25 1.4) (layers F.Cu F.Paste F.Mask)
       (net 2 +3V3))
-    (model ../../libs/3D/MOLEX_52892_1633.wrl
+    (model ${KIPRJMOD}/libs/3D/MOLEX_52892_1633.wrl
       (offset (xyz 0 -5.079999923706055 0))
       (scale (xyz 0.39 0.39 0.39))
       (rotate (xyz 90 180 180))
@@ -2796,7 +2796,7 @@
       (net 2 +3V3))
     (pad 2 smd rect (at 0.01631 3.010692) (size 2 0.8) (layers B.Cu B.Paste B.Mask)
       (net 44 /cpu/DFU))
-    (model ../../libs/3D/KSR231.wrl
+    (model ${KIPRJMOD}/libs/3D/KSR231.wrl
       (at (xyz 0 0 0))
       (scale (xyz 0.45 0.45 0.45))
       (rotate (xyz 90 180 90))
@@ -2825,7 +2825,7 @@
       (net 16 /cpu/NRST))
     (pad 2 smd rect (at 0.01631 3.010692 180) (size 2 0.8) (layers B.Cu B.Paste B.Mask)
       (net 1 GND))
-    (model ../../libs/3D/KSR231.wrl
+    (model ${KIPRJMOD}/libs/3D/KSR231.wrl
       (at (xyz 0 0 0))
       (scale (xyz 0.45 0.45 0.45))
       (rotate (xyz 90 180 90))
@@ -3044,7 +3044,7 @@
       (scale (xyz 1 1 1))
       (rotate (xyz 0 0 0))
     )
-    (model ../../libs/3D/Crystal_SMD_SeikoEpson_TSX3225-4pin_3.2x2.5mm.wrl
+    (model ${KIPRJMOD}/libs/3D/Crystal_SMD_SeikoEpson_TSX3225-4pin_3.2x2.5mm.wrl
       (at (xyz 0 0 0))
       (scale (xyz 0.254 0.254 0.254))
       (rotate (xyz 0 0 0))
@@ -3349,7 +3349,7 @@
     (pad "" smd rect (at -6.7992 7.04874 180) (size 2.79908 1.00076) (layers F.Cu F.Paste F.Mask))
     (pad "" smd rect (at 6.5993 7.50086 180) (size 1.89992 1.30048) (layers F.Cu F.Paste F.Mask))
     (pad "" smd rect (at -6.7992 -3.29922 90) (size 1.00076 1.19888) (layers F.Cu F.Paste F.Mask))
-    (model ../../libs/3D/DM3AT-SF-PEJM5.stp
+    (model ${KIPRJMOD}/libs/3D/DM3AT-SF-PEJM5.stp
       (offset (xyz -165.34 -154 0))
       (scale (xyz 1 1 1))
       (rotate (xyz 0 0 0))
@@ -3792,7 +3792,7 @@
       (net 32 /cpu/I2C1_SDA_PB9))
   )
 
-  (gr_text "The current 4 layer 1.6mm board stackup is as follows:\n\nThickness           Layer\n========================================\n0.0356mm       copper\n0.1702mm       FR408 prepreg\n0.0178mm       copper\n1.1938mm       FR408 \n0.0178mm       copper\n0.1702mm       FR408 prepreg\n0.0356mm       copper\n0.0254mm       solder resist" (at 85.80628 134.78256) (layer Cmts.User)
+  (gr_text "The current 4 layer 1.6mm board stackup is as follows:\n\nThickness           Layer\n========================================\n\nOuter layers 1 oz base copper foil\nInner layers 0.5 oz base copper foil\n\nElectroless Nickel Immersion Gold (ENIG) surface finish\n\nsolder resist   0.0254mm\ncopper          0.0356mm    L1 (TOP)\nFR408 prepreg   0.1702mm\ncopper          0.0178mm    L2 (GND)\nFR408           1.1938mm\ncopper          0.0178mm    L3 (PWR)\nFR408 prepreg   0.1702mm\ncopper          0.0356mm    L4 (BOT)\nsolder resist   0.0254mm\n" (at 85.80628 134.78256) (layer Cmts.User)
     (effects (font (size 1.5 1.5) (thickness 0.3)) (justify left))
   )
   (gr_arc (start 87.974981 103.845819) (end 85.979 103.84598) (angle -89.9953784) (layer Edge.Cuts) (width 0.1) (tstamp 5CDC8BD2))
