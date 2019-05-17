@@ -1,3 +1,5 @@
+#local configuration
+setenv.local.sh
 libs/*
 #backup
 *-bak
