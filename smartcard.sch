@@ -2,12 +2,12 @@ EESchema Schematic File Version 4
 LIBS:leia-cache
 EELAYER 29 0
 EELAYER END
-$Descr A2 23386 16535
+$Descr A3 16535 11693
 encoding utf-8
-Sheet 3 4
-Title "LEIA Motherboard"
-Date "2019-05-16"
-Rev ""
+Sheet 3 5
+Title "CW-LEIA"
+Date "2016-28-20"
+Rev "0.2"
 Comp "ANSSI"
 Comment1 "Designed by Mathieu RENARD"
 Comment2 "LICENCE: CERN Open Hardware Licence v1.2"
@@ -17,241 +17,1828 @@ $EndDescr
 $Comp
 L leia:ISO7816_NO P1000
 U 1 1 583DE412
-P 11350 8000
-F 0 "P1000" H 11350 8300 60  0000 C CNN
-F 1 "ISO7816_NO" H 11350 7350 60  0000 C CNN
-F 2 "leia:VJW53666" H 11350 8000 30  0001 C CNN
-F 3 "http://fr.rs-online.com/web/p/supports-de-carte-sim-et-memoire/5427911/" H 11350 8000 30  0001 C CNN
-F 4 "Amphenol FCI" H 11350 8000 60  0001 C CNN "MFG Name"
-F 5 "7312P0225A13LF" H 11350 8000 60  0001 C CNN "MFG Part Num"
-F 6 "542-7911" H 11350 8000 60  0001 C CNN "Distrib PN"
-F 7 "http://fr.rs-online.com/web/p/supports-de-carte-sim-et-memoire/5427911/" H 11350 8000 60  0001 C CNN "Distrib Link"
-F 8 "RS" H 11350 8000 50  0001 C CNN "Distrib"
-	1    11350 8000
-	1    0    0    -1  
-$EndComp
-$Comp
-L leia:GND #PWR0128
-U 1 1 583E1B51
-P 12050 8950
-F 0 "#PWR0128" H 12050 8700 50  0001 C CNN
-F 1 "GND" H 12050 8800 50  0000 C CNN
-F 2 "" H 12050 8950 60  0000 C CNN
-F 3 "" H 12050 8950 60  0000 C CNN
-	1    12050 8950
+P 12900 4750
+F 0 "P1000" H 12900 5050 60  0000 C CNN
+F 1 "ISO7816_NO" H 12900 4100 60  0000 C CNN
+F 2 "leia:VJW53666" H 12900 4750 30  0001 C CNN
+F 3 "http://fr.rs-online.com/web/p/supports-de-carte-sim-et-memoire/5427911/" H 12900 4750 30  0001 C CNN
+F 4 "Amphenol FCI" H 12900 4750 60  0001 C CNN "MFG Name"
+F 5 "7312P0225A13LF" H 12900 4750 60  0001 C CNN "MFG Part Num"
+F 6 "542-7911" H 12900 4750 60  0001 C CNN "Distrib PN"
+F 7 "http://fr.rs-online.com/web/p/supports-de-carte-sim-et-memoire/5427911/" H 12900 4750 60  0001 C CNN "Distrib Link"
+F 8 "RS" H 12900 4750 50  0001 C CNN "Distrib"
+F 9 "RS" H 1750 -3050 50  0001 C CNN "Distrib Name"
+	1    12900 4750
 	1    0    0    -1  
 $EndComp
 $Comp
 L Device:R_Small R1001
 U 1 1 583E2AD0
-P 10500 7650
-F 0 "R1001" V 10580 7650 50  0000 C CNN
-F 1 "10K" V 10500 7650 50  0000 C CNN
-F 2 "Resistor_SMD:R_0603_1608Metric" V 10430 7650 30  0001 C CNN
-F 3 "" H 10500 7650 30  0000 C CNN
-F 4 "FARNELL" H 0   -50 50  0001 C CNN "Distrib"
-F 5 "https://fr.farnell.com/vishay/crcw060310k0fkeahp/res-couche-epaisse-10k-1-0-25w/dp/1738918" H 0   -50 50  0001 C CNN "Distrib Link"
-F 6 "1738918" H 0   -50 50  0001 C CNN "Distrib PN"
-F 7 "Vishay" H 0   -50 50  0001 C CNN "MFG Name"
-F 8 "CRCW060310K0FKEAHP" H 0   -50 50  0001 C CNN "MFG Part Num"
-	1    10500 7650
+P 12000 3900
+F 0 "R1001" H 11800 3950 50  0000 C CNN
+F 1 "20k" H 11850 3850 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 11930 3900 30  0001 C CNN
+F 3 "" H 12000 3900 30  0000 C CNN
+F 4 "Vishay" H 12000 3900 50  0001 C CNN "MFG Name"
+F 5 "RCA060320K0FKEA" H 12000 3900 50  0001 C CNN "MFG Part Num"
+F 6 "2616587" H 12000 3900 50  0001 C CNN "Distrib PN"
+F 7 "Farnell" H 12000 3900 50  0001 C CNN "Distrib"
+F 8 "Farnell" H 1700 -3050 50  0001 C CNN "Distrib Name"
+	1    12000 3900
 	1    0    0    -1  
 $EndComp
-Text Label 9900 8450 0    60   ~ 0
-CARD_CT
-Text Label 9850 7950 0    60   ~ 0
-CARD_RESET
-Text Label 12850 8050 2    60   ~ 0
-UART2_CARD_IO
-Text Label 9850 8050 0    60   ~ 0
-UART2_CARD_CLK
+Text Label 10800 4700 0    60   ~ 0
+CRD_RST
+Text Label 15150 4800 2    60   ~ 0
+CRD_IO
+Text Label 10800 4800 0    60   ~ 0
+CRD_CLK
 Text Label -16800 27400 0    81   ~ 0
 ear
-Text Label 12850 7950 2    60   ~ 0
-CARD_VPP
+Text Label 15150 4700 2    60   ~ 0
+CRD_VPP
 Wire Wire Line
-	10900 8050 9500 8050
-Wire Wire Line
-	11800 7950 12850 7950
-Wire Wire Line
-	11800 8050 12850 8050
-Wire Wire Line
-	11800 7850 12050 7850
-Wire Wire Line
-	9500 7950 10900 7950
-Wire Wire Line
-	10700 7850 10900 7850
-Wire Wire Line
-	10500 7750 10500 8450
-Wire Wire Line
-	9500 8450 10500 8450
-Connection ~ 10500 8450
+	12250 4600 12450 4600
 $Comp
 L Device:C_Small C1002
 U 1 1 583F1618
-P 12100 7150
-F 0 "C1002" H 12125 7250 50  0000 L CNN
-F 1 "100nF" H 12125 7050 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0603_1608Metric" H 12138 7000 30  0001 C CNN
-F 3 "" H 12100 7150 60  0000 C CNN
-F 4 "AVX" H 12100 7150 50  0001 C CNN "MFG Name"
-F 5 "0603YC104JAT2A" H 12100 7150 50  0001 C CNN "MFG Part Num"
-F 6 "FARNELL" H 0   0   50  0001 C CNN "Distrib"
-F 7 "https://fr.farnell.com/avx/0603yc104jat2a/condensateur-0-1-f-16v-5-x7r-0603/dp/1740612" H 0   0   50  0001 C CNN "Distrib Link"
-F 8 "1740612" H 0   0   50  0001 C CNN "Distrib PN"
-	1    12100 7150
+P 13650 4100
+F 0 "C1002" H 13675 4200 50  0000 L CNN
+F 1 "100nF" H 13675 4000 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 13688 3950 30  0001 C CNN
+F 3 "" H 13650 4100 60  0000 C CNN
+F 4 "Murata" H 13650 4100 50  0001 C CNN "MFG Name"
+F 5 "GRM188R71H104KA93D" H 13650 4100 50  0001 C CNN "MFG Part Num"
+F 6 "Farnell" H 1750 -3050 50  0001 C CNN "Distrib"
+F 7 "https://fr.farnell.com/murata/grm188r71h104ka93d/condensateur-0-1-f-50v-10-x7r/dp/8820023?st=GRM188R71H104KA93D" H 1750 -3050 50  0001 C CNN "Distrib Link"
+F 8 "Farnell" H 1750 -3050 50  0001 C CNN "Distrib Name"
+F 9 "8820023" H 1750 -3050 50  0001 C CNN "Distrib PN"
+	1    13650 4100
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	12100 7350 12100 7250
-Connection ~ 11950 7350
+	13650 4350 13650 4200
+Wire Wire Line
+	12000 5200 12450 5200
+Wire Wire Line
+	12250 3650 12250 4600
+Text HLabel 2500 4150 0    50   Input ~ 0
+CARD_CLK
+Text HLabel 2500 3550 0    50   Input ~ 0
+CARD_RESET
+Text HLabel 2500 4850 0    50   Input ~ 0
+CARD_VPP
+Text HLabel 1700 7000 0    50   BiDi ~ 0
+CARD_IO
+Wire Wire Line
+	3800 2250 3800 1900
+Wire Wire Line
+	3800 1900 3600 1900
+Wire Wire Line
+	3800 1250 3800 1800
+Wire Wire Line
+	3800 1800 3600 1800
+Wire Wire Line
+	4650 5050 3650 5050
+Wire Wire Line
+	3650 5050 3650 4350
+Connection ~ 3650 5050
+Wire Wire Line
+	4650 3750 3650 3750
+Wire Wire Line
+	3650 3750 3650 4350
+Connection ~ 3650 4350
+Wire Wire Line
+	5750 3650 9100 3650
 $Comp
-L leia:GND #PWR0129
-U 1 1 583F161E
-P 11950 7350
-F 0 "#PWR0129" H 11950 7100 50  0001 C CNN
-F 1 "GND" H 11950 7200 50  0000 C CNN
-F 2 "" H 11950 7350 60  0000 C CNN
-F 3 "" H 11950 7350 60  0000 C CNN
-	1    11950 7350
+L power:GNDA #PWR0104
+U 1 1 5C26BCAE
+P 6350 10450
+F 0 "#PWR0104" H 6350 10200 50  0001 C CNN
+F 1 "GNDA" H 6355 10277 50  0000 C CNN
+F 2 "" H 6350 10450 50  0001 C CNN
+F 3 "" H 6350 10450 50  0001 C CNN
+	1    6350 10450
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:VDDA #PWR0106
+U 1 1 5C26BE37
+P 6100 2800
+F 0 "#PWR0106" H 6100 2650 50  0001 C CNN
+F 1 "VDDA" H 6117 2973 50  0000 C CNN
+F 2 "" H 6100 2800 50  0001 C CNN
+F 3 "" H 6100 2800 50  0001 C CNN
+	1    6100 2800
+	1    0    0    -1  
+$EndComp
+Text HLabel 1750 8250 0    50   UnSpc ~ 0
+CARD_PWR_EN
+Text Label 9100 3650 2    60   ~ 0
+CRD_RST
+Text Label 9100 4250 2    60   ~ 0
+CRD_CLK
+Text Label 9100 5200 2    60   ~ 0
+CRD_VPP
+$Comp
+L power:GNDA #PWR0111
+U 1 1 5C26EF80
+P 13950 5700
+F 0 "#PWR0111" H 13950 5450 50  0001 C CNN
+F 1 "GNDA" H 13955 5527 50  0000 C CNN
+F 2 "" H 13950 5700 50  0001 C CNN
+F 3 "" H 13950 5700 50  0001 C CNN
+	1    13950 5700
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	11800 7350 11950 7350
+	13350 4600 13850 4600
+Text Label 10800 3650 0    60   ~ 0
+CRD_PWR
 Wire Wire Line
-	11800 7250 11800 7350
+	4650 8450 3650 8450
+Connection ~ 3650 8450
+Text Label 9150 8650 2    60   ~ 0
+CRD_PWR
+NoConn ~ 12450 4900
+NoConn ~ 13350 4900
+Wire Wire Line
+	13950 5200 13950 5700
+Wire Wire Line
+	13350 5200 13950 5200
+Wire Wire Line
+	12250 3650 12650 3650
+Wire Wire Line
+	13350 4800 14400 4800
+Text HLabel 1800 9550 0    50   Input ~ 0
+TRIGGER
+$Comp
+L power:VDDA #PWR0119
+U 1 1 5C38AB69
+P 12000 3400
+F 0 "#PWR0119" H 12000 3250 50  0001 C CNN
+F 1 "VDDA" H 12017 3573 50  0000 C CNN
+F 2 "" H 12000 3400 50  0001 C CNN
+F 3 "" H 12000 3400 50  0001 C CNN
+	1    12000 3400
+	1    0    0    -1  
+$EndComp
+$Comp
+L optos:FOD8001 U?
+U 1 1 5C420D85
+P 4650 3500
+AR Path="/5C420D85" Ref="U?"  Part="1" 
+AR Path="/5B19B7B2/5C420D85" Ref="U1100"  Part="1" 
+AR Path="/5CBC3017/5B19B7B2/5C420D85" Ref="U1100"  Part="1" 
+F 0 "U1100" H 4950 3750 50  0000 C CNN
+F 1 "FOD8001" H 5000 3650 50  0000 C CNN
+F 2 "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm" H 5600 3600 50  0001 L CNN
+F 3 "http://www.farnell.com/datasheets/2572437.pdf" H 5600 3500 50  0001 L CNN
+F 4 "Farnell" H 800 100 50  0001 C CNN "Distrib"
+F 5 "Farnell" H 800 100 50  0001 C CNN "Distrib Name"
+F 6 "2825067" H 800 100 50  0001 C CNN "Distrib PN"
+F 7 "ON SEMICONDUCTOR" H 800 100 50  0001 C CNN "MFG Name"
+F 8 "FOD8001" H 800 100 50  0001 C CNN "MFG Part Num"
+	1    4650 3500
+	1    0    0    -1  
+$EndComp
+$Comp
+L optos:FOD8001 U?
+U 1 1 5C4398BF
+P 4650 4100
+AR Path="/5C4398BF" Ref="U?"  Part="1" 
+AR Path="/5B19B7B2/5C4398BF" Ref="U1200"  Part="1" 
+AR Path="/5CBC3017/5B19B7B2/5C4398BF" Ref="U1200"  Part="1" 
+F 0 "U1200" H 4950 4350 50  0000 C CNN
+F 1 "FOD8001" H 5000 4250 50  0000 C CNN
+F 2 "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm" H 5600 4200 50  0001 L CNN
+F 3 "http://www.farnell.com/datasheets/2572437.pdf" H 5600 4100 50  0001 L CNN
+F 4 "Farnell" H 800 100 50  0001 C CNN "Distrib"
+F 5 "Farnell" H 800 100 50  0001 C CNN "Distrib Name"
+F 6 "2825067" H 800 100 50  0001 C CNN "Distrib PN"
+F 7 "ON SEMICONDUCTOR" H 800 100 50  0001 C CNN "MFG Name"
+F 8 "FOD8001" H 800 100 50  0001 C CNN "MFG Part Num"
+	1    4650 4100
+	1    0    0    -1  
+$EndComp
+$Comp
+L optos:FOD8001 U?
+U 1 1 5C43E7DE
+P 4650 4800
+AR Path="/5C43E7DE" Ref="U?"  Part="1" 
+AR Path="/5B19B7B2/5C43E7DE" Ref="U1300"  Part="1" 
+AR Path="/5CBC3017/5B19B7B2/5C43E7DE" Ref="U1300"  Part="1" 
+F 0 "U1300" H 4950 5050 50  0000 C CNN
+F 1 "FOD8001" H 5000 4950 50  0000 C CNN
+F 2 "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm" H 5600 4900 50  0001 L CNN
+F 3 "http://www.farnell.com/datasheets/2572437.pdf" H 5600 4800 50  0001 L CNN
+F 4 "Farnell" H 800 100 50  0001 C CNN "Distrib"
+F 5 "Farnell" H 800 100 50  0001 C CNN "Distrib Name"
+F 6 "2825067" H 800 100 50  0001 C CNN "Distrib PN"
+F 7 "ON SEMICONDUCTOR" H 800 100 50  0001 C CNN "MFG Name"
+F 8 "FOD8001" H 800 100 50  0001 C CNN "MFG Part Num"
+	1    4650 4800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4650 8150 3800 8150
+Connection ~ 3800 8800
+Wire Wire Line
+	3800 8800 3800 8150
+Connection ~ 3800 3450
+Wire Wire Line
+	3800 3450 3800 2800
+Connection ~ 3800 4050
+Wire Wire Line
+	3800 4050 3800 3450
+$Comp
+L Device:CP_Small C1101
+U 1 1 5C4C710B
+P 3250 3550
+F 0 "C1101" H 3338 3596 50  0000 L CNN
+F 1 "0.1uF 35V Tant" H 3338 3505 50  0000 L CNN
+F 2 "Capacitor_Tantalum_SMD:CP_EIA-3216-18_Kemet-A" H 3250 3550 50  0001 C CNN
+F 3 "http://datasheet.octopart.com/T491A104K035AT-Kemet-datasheet-5314837.pdf" H 3250 3550 50  0001 C CNN
+F 4 "KEMET" H 3250 3550 50  0001 C CNN "MFG Name"
+F 5 "T491A104K035AT" H 3250 3550 50  0001 C CNN "MFG Part Num"
+F 6 "Digi-key" H 3250 3550 50  0001 C CNN "Distrib Name"
+F 7 "Digi-key" H 800 100 50  0001 C CNN "Distrib"
+F 8 "https://www.digikey.fr/product-detail/fr/kemet/T491A104K035AT/399-3676-1-ND/819001" H 800 100 50  0001 C CNN "Distrib Link"
+F 9 "399-3676-1-ND" H 800 100 50  0001 C CNN "Distrib PN"
+	1    3250 3550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3250 3450 3800 3450
+$Comp
+L Device:CP_Small C1201
+U 1 1 5C4C718A
+P 3250 4150
+F 0 "C1201" H 3338 4196 50  0000 L CNN
+F 1 "0.1uF 35V Tant" H 3338 4105 50  0000 L CNN
+F 2 "Capacitor_Tantalum_SMD:CP_EIA-3216-18_Kemet-A" H 3250 4150 50  0001 C CNN
+F 3 "http://datasheet.octopart.com/T491A104K035AT-Kemet-datasheet-5314837.pdf" H 3250 4150 50  0001 C CNN
+F 4 "KEMET" H 3250 4150 50  0001 C CNN "MFG Name"
+F 5 "T491A104K035AT" H 3250 4150 50  0001 C CNN "MFG Part Num"
+F 6 "Digi-key" H 3250 4150 50  0001 C CNN "Distrib Name"
+F 7 "Digi-key" H 800 100 50  0001 C CNN "Distrib"
+F 8 "https://www.digikey.fr/product-detail/fr/kemet/T491A104K035AT/399-3676-1-ND/819001" H 800 100 50  0001 C CNN "Distrib Link"
+F 9 "399-3676-1-ND" H 800 100 50  0001 C CNN "Distrib PN"
+	1    3250 4150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3250 4050 3800 4050
+$Comp
+L Device:CP_Small C1301
+U 1 1 5C4FB654
+P 3250 4850
+F 0 "C1301" H 3338 4896 50  0000 L CNN
+F 1 "0.1uF 35V Tant" H 3338 4805 50  0000 L CNN
+F 2 "Capacitor_Tantalum_SMD:CP_EIA-3216-18_Kemet-A" H 3250 4850 50  0001 C CNN
+F 3 "http://datasheet.octopart.com/T491A104K035AT-Kemet-datasheet-5314837.pdf" H 3250 4850 50  0001 C CNN
+F 4 "KEMET" H 3250 4850 50  0001 C CNN "MFG Name"
+F 5 "T491A104K035AT" H 3250 4850 50  0001 C CNN "MFG Part Num"
+F 6 "Digi-key" H 3250 4850 50  0001 C CNN "Distrib Name"
+F 7 "Digi-key" H 800 100 50  0001 C CNN "Distrib"
+F 8 "https://www.digikey.fr/product-detail/fr/kemet/T491A104K035AT/399-3676-1-ND/819001" H 800 100 50  0001 C CNN "Distrib Link"
+F 9 "399-3676-1-ND" H 800 100 50  0001 C CNN "Distrib PN"
+	1    3250 4850
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:CP_Small C1501
+U 1 1 5C4FBBC9
+P 3250 8250
+F 0 "C1501" H 3338 8296 50  0000 L CNN
+F 1 "0.1uF 35V Tant" H 3338 8205 50  0000 L CNN
+F 2 "Capacitor_Tantalum_SMD:CP_EIA-3216-18_Kemet-A" H 3250 8250 50  0001 C CNN
+F 3 "http://datasheet.octopart.com/T491A104K035AT-Kemet-datasheet-5314837.pdf" H 3250 8250 50  0001 C CNN
+F 4 "KEMET" H 3250 8250 50  0001 C CNN "MFG Name"
+F 5 "T491A104K035AT" H 3250 8250 50  0001 C CNN "MFG Part Num"
+F 6 "Digi-key" H 3250 8250 50  0001 C CNN "Distrib Name"
+F 7 "Digi-key" H 800 100 50  0001 C CNN "Distrib"
+F 8 "https://www.digikey.fr/product-detail/fr/kemet/T491A104K035AT/399-3676-1-ND/819001" H 800 100 50  0001 C CNN "Distrib Link"
+F 9 "399-3676-1-ND" H 800 100 50  0001 C CNN "Distrib PN"
+	1    3250 8250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3250 8150 3800 8150
+Wire Wire Line
+	3250 8350 3250 8450
+Wire Wire Line
+	3250 8450 3650 8450
+Connection ~ 3800 4750
+Wire Wire Line
+	3800 4750 3800 4050
+Wire Wire Line
+	6350 3750 6600 3750
+Connection ~ 6350 4350
+Wire Wire Line
+	6350 4350 6350 3750
+Wire Wire Line
+	5750 4050 6100 4050
+Connection ~ 6100 4050
+Wire Wire Line
+	6100 4050 6100 4750
+Wire Wire Line
+	5750 3450 6100 3450
+Connection ~ 6100 3450
+Wire Wire Line
+	6100 3450 6100 4050
+Wire Wire Line
+	5750 4750 6100 4750
+Connection ~ 6100 4750
+Connection ~ 6350 5050
+Wire Wire Line
+	6350 5050 6350 4350
+Connection ~ 6100 8150
+Wire Wire Line
+	6100 8150 6100 8800
+Connection ~ 6350 8450
+Connection ~ 6100 8800
+Wire Wire Line
+	5750 9100 6350 9100
+Connection ~ 6350 9100
+Wire Wire Line
+	6350 9100 6350 8450
+Wire Wire Line
+	3250 3650 3250 3750
+Wire Wire Line
+	3250 3750 3650 3750
+Wire Wire Line
+	3650 4350 3250 4350
+Wire Wire Line
+	3250 4250 3250 4350
+Wire Wire Line
+	3250 4950 3250 5050
+Wire Wire Line
+	3250 5050 3650 5050
+$Comp
+L Device:CP_Small C1508
+U 1 1 5C855576
+P 6550 8350
+F 0 "C1508" H 6638 8396 50  0000 L CNN
+F 1 "0.1uF 35V Tant" H 6638 8305 50  0000 L CNN
+F 2 "Capacitor_Tantalum_SMD:CP_EIA-3216-18_Kemet-A" H 6550 8350 50  0001 C CNN
+F 3 "http://datasheet.octopart.com/T491A104K035AT-Kemet-datasheet-5314837.pdf" H 6550 8350 50  0001 C CNN
+F 4 "KEMET" H 6550 8350 50  0001 C CNN "MFG Name"
+F 5 "T491A104K035AT" H 6550 8350 50  0001 C CNN "MFG Part Num"
+F 6 "Digi-key" H 6550 8350 50  0001 C CNN "Distrib Name"
+F 7 "Digi-key" H 800 100 50  0001 C CNN "Distrib"
+F 8 "https://www.digikey.fr/product-detail/fr/kemet/T491A104K035AT/399-3676-1-ND/819001" H 800 100 50  0001 C CNN "Distrib Link"
+F 9 "399-3676-1-ND" H 800 100 50  0001 C CNN "Distrib PN"
+	1    6550 8350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6550 8450 6350 8450
+$Comp
+L Device:CP_Small C1408
+U 1 1 5C8555EB
+P 6600 6750
+F 0 "C1408" H 6688 6796 50  0000 L CNN
+F 1 "0.1uF 35V Tant" H 6688 6705 50  0000 L CNN
+F 2 "Capacitor_Tantalum_SMD:CP_EIA-3216-18_Kemet-A" H 6600 6750 50  0001 C CNN
+F 3 "http://datasheet.octopart.com/T491A104K035AT-Kemet-datasheet-5314837.pdf" H 6600 6750 50  0001 C CNN
+F 4 "KEMET" H 6600 6750 50  0001 C CNN "MFG Name"
+F 5 "T491A104K035AT" H 6600 6750 50  0001 C CNN "MFG Part Num"
+F 6 "Digi-key" H 6600 6750 50  0001 C CNN "Distrib Name"
+F 7 "Digi-key" H 800 100 50  0001 C CNN "Distrib"
+F 8 "https://www.digikey.fr/product-detail/fr/kemet/T491A104K035AT/399-3676-1-ND/819001" H 800 100 50  0001 C CNN "Distrib Link"
+F 9 "399-3676-1-ND" H 800 100 50  0001 C CNN "Distrib PN"
+	1    6600 6750
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:CP_Small C1308
+U 1 1 5C855657
+P 6600 4950
+F 0 "C1308" H 6688 4996 50  0000 L CNN
+F 1 "0.1uF 35V Tant" H 6688 4905 50  0000 L CNN
+F 2 "Capacitor_Tantalum_SMD:CP_EIA-3216-18_Kemet-A" H 6600 4950 50  0001 C CNN
+F 3 "http://datasheet.octopart.com/T491A104K035AT-Kemet-datasheet-5314837.pdf" H 6600 4950 50  0001 C CNN
+F 4 "KEMET" H 6600 4950 50  0001 C CNN "MFG Name"
+F 5 "T491A104K035AT" H 6600 4950 50  0001 C CNN "MFG Part Num"
+F 6 "Digi-key" H 6600 4950 50  0001 C CNN "Distrib Name"
+F 7 "Digi-key" H 800 100 50  0001 C CNN "Distrib"
+F 8 "https://www.digikey.fr/product-detail/fr/kemet/T491A104K035AT/399-3676-1-ND/819001" H 800 100 50  0001 C CNN "Distrib Link"
+F 9 "399-3676-1-ND" H 800 100 50  0001 C CNN "Distrib PN"
+	1    6600 4950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6600 5050 6350 5050
+$Comp
+L Device:CP_Small C1208
+U 1 1 5C8556C5
+P 6600 4250
+F 0 "C1208" H 6688 4296 50  0000 L CNN
+F 1 "0.1uF 35V Tant" H 6688 4205 50  0000 L CNN
+F 2 "Capacitor_Tantalum_SMD:CP_EIA-3216-18_Kemet-A" H 6600 4250 50  0001 C CNN
+F 3 "http://datasheet.octopart.com/T491A104K035AT-Kemet-datasheet-5314837.pdf" H 6600 4250 50  0001 C CNN
+F 4 "KEMET" H 6600 4250 50  0001 C CNN "MFG Name"
+F 5 "T491A104K035AT" H 6600 4250 50  0001 C CNN "MFG Part Num"
+F 6 "Digi-key" H 6600 4250 50  0001 C CNN "Distrib Name"
+F 7 "Digi-key" H 800 100 50  0001 C CNN "Distrib"
+F 8 "https://www.digikey.fr/product-detail/fr/kemet/T491A104K035AT/399-3676-1-ND/819001" H 800 100 50  0001 C CNN "Distrib Link"
+F 9 "399-3676-1-ND" H 800 100 50  0001 C CNN "Distrib PN"
+	1    6600 4250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6600 4350 6350 4350
+$Comp
+L Device:CP_Small C1108
+U 1 1 5C855735
+P 6600 3650
+F 0 "C1108" H 6688 3696 50  0000 L CNN
+F 1 "0.1uF 35V Tant" H 6688 3605 50  0000 L CNN
+F 2 "Capacitor_Tantalum_SMD:CP_EIA-3216-18_Kemet-A" H 6600 3650 50  0001 C CNN
+F 3 "http://datasheet.octopart.com/T491A104K035AT-Kemet-datasheet-5314837.pdf" H 6600 3650 50  0001 C CNN
+F 4 "KEMET" H 6600 3650 50  0001 C CNN "MFG Name"
+F 5 "T491A104K035AT" H 6600 3650 50  0001 C CNN "MFG Part Num"
+F 6 "Digi-key" H 6600 3650 50  0001 C CNN "Distrib Name"
+F 7 "Digi-key" H 800 100 50  0001 C CNN "Distrib"
+F 8 "https://www.digikey.fr/product-detail/fr/kemet/T491A104K035AT/399-3676-1-ND/819001" H 800 100 50  0001 C CNN "Distrib Link"
+F 9 "399-3676-1-ND" H 800 100 50  0001 C CNN "Distrib PN"
+	1    6600 3650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6600 3550 6600 3450
+Wire Wire Line
+	6600 3450 6100 3450
+Wire Wire Line
+	6600 4150 6600 4050
+Wire Wire Line
+	6600 4050 6100 4050
+Wire Wire Line
+	6600 4850 6600 4750
+Wire Wire Line
+	6600 4750 6100 4750
+Wire Wire Line
+	6550 8250 6550 8150
+Wire Wire Line
+	6550 9100 6350 9100
+Wire Wire Line
+	5750 8800 6100 8800
+Wire Wire Line
+	5750 5050 6350 5050
+Wire Wire Line
+	5750 4350 6350 4350
+Connection ~ 6350 3750
+Wire Wire Line
+	5750 3750 6350 3750
+Wire Wire Line
+	10800 4700 12450 4700
+Wire Wire Line
+	13350 4700 15150 4700
+$Comp
+L Connector:Conn_Coaxial J1706
+U 1 1 5C32B7A4
+P 9150 9650
+F 0 "J1706" H 9300 9650 50  0000 L CNN
+F 1 "TARGET_TRIG" H 17250 1534 50  0000 L CNN
+F 2 "Connector_Coaxial:SMA_Amphenol_132289_EdgeMount" H 17150 1650 50  0001 C CNN
+F 3 "http://www.farnell.com/datasheets/1681616.pdf" H 17150 1650 50  0001 C CNN
+F 4 "AMPHENOL CONNEX" H 17150 1650 50  0001 C CNN "MFG Name"
+F 5 "132289" H 17150 1650 50  0001 C CNN "MFG Part Num"
+F 6 "Farnell" H 17150 1650 50  0001 C CNN "Distrib"
+F 7 "2112467" H 17150 1650 50  0001 C CNN "Distrib Part Num"
+F 8 "https://fr.farnell.com/amphenol-connex/132289/sma-jack-50ohm-bulkhead/dp/2112467?st=132289" H 2200 100 50  0001 C CNN "Distrib Link"
+F 9 "Farnell" H 2200 100 50  0001 C CNN "Distrib Name"
+F 10 "2112467" H 2200 100 50  0001 C CNN "Distrib PN"
+	1    9150 9650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	12650 3850 12500 3850
+Wire Wire Line
+	13350 4200 13350 4350
 $Comp
 L Device:CP_Small C1001
 U 1 1 583F162A
-P 11800 7150
-F 0 "C1001" H 11825 7250 50  0000 L CNN
-F 1 "10uF" H 11825 7050 50  0000 L CNN
-F 2 "Capacitor_Tantalum_SMD:CP_EIA-1608-08_AVX-J" H 11838 7000 30  0001 C CNN
-F 3 "" H 11800 7150 60  0000 C CNN
-F 4 "AVX" H 11800 7150 50  0001 C CNN "MFG Name"
-F 5 "F981A106MMA" H 11800 7150 50  0001 C CNN "MFG Part Num"
-F 6 "2747667" H 11800 7150 50  0001 C CNN "Distrib PN"
-F 7 "https://fr.farnell.com/avx/f981a106mma/condensateur-10-f-10v-20/dp/2747667" H 11800 7150 50  0001 C CNN "Distrib Link"
-F 8 "FARNELL" H 0   0   50  0001 C CNN "Distrib"
-	1    11800 7150
+P 13350 4100
+F 0 "C1001" H 13375 4200 50  0000 L CNN
+F 1 "10uF" H 13375 4000 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 13388 3950 30  0001 C CNN
+F 3 "" H 13350 4100 60  0000 C CNN
+F 4 "Vishay" H 13350 4100 50  0001 C CNN "MFG Name"
+F 5 "TP8M106M6R3C" H 13350 4100 50  0001 C CNN "MFG Part Num"
+F 6 "2425568" H 13350 4100 50  0001 C CNN "Distrib PN"
+F 7 "http://fr.farnell.com/vishay/tp8m106m6r3c/condensateur-tantale-10uf-6-3v/dp/2425568?st=10uF%200603" H 13350 4100 50  0001 C CNN "Distrib Link"
+F 8 "Farnell" H 1750 -3050 50  0001 C CNN "Distrib"
+F 9 "Farnell" H 1750 -3050 50  0001 C CNN "Distrib Name"
+	1    13350 4100
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	10700 7000 9850 7000
-Text Label 9850 7000 0    60   ~ 0
-CARD_POWER
+	13650 3650 13650 3750
 Wire Wire Line
-	10500 7550 10500 7350
+	13150 3850 13350 3850
+Wire Wire Line
+	13150 3650 13650 3650
+Connection ~ 13650 3850
+Wire Wire Line
+	13650 3850 13650 4000
+Wire Wire Line
+	13350 3850 13650 3850
+Wire Wire Line
+	5750 8150 6100 8150
+Wire Wire Line
+	5750 8450 6350 8450
 $Comp
-L leia:+3V3 #PWR0130
-U 1 1 5A023985
-P 10500 7350
-F 0 "#PWR0130" H 10500 7200 50  0001 C CNN
-F 1 "+3V3" H 10500 7490 50  0000 C CNN
-F 2 "" H 10500 7350 60  0000 C CNN
-F 3 "" H 10500 7350 60  0000 C CNN
-	1    10500 7350
+L optos:FOD8001 U?
+U 1 1 5C43E98D
+P 4650 8200
+AR Path="/5C43E98D" Ref="U?"  Part="1" 
+AR Path="/5B19B7B2/5C43E98D" Ref="U1500"  Part="1" 
+AR Path="/5CBC3017/5B19B7B2/5C43E98D" Ref="U1500"  Part="1" 
+F 0 "U1500" H 4950 8450 50  0000 C CNN
+F 1 "FOD8001" H 5000 8350 50  0000 C CNN
+F 2 "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm" H 5600 8300 50  0001 L CNN
+F 3 "http://www.farnell.com/datasheets/2572437.pdf" H 5600 8200 50  0001 L CNN
+F 4 "Farnell" H 800 100 50  0001 C CNN "Distrib"
+F 5 "Farnell" H 800 100 50  0001 C CNN "Distrib Name"
+F 6 "2825067" H 800 100 50  0001 C CNN "Distrib PN"
+F 7 "ON SEMICONDUCTOR" H 800 100 50  0001 C CNN "MFG Name"
+F 8 "FOD8001" H 800 100 50  0001 C CNN "MFG Part Num"
+	1    4650 8200
 	1    0    0    -1  
 $EndComp
-Text Notes 9850 6900 0    60   ~ 0
-The smartcard is powered by U500 GPIO
 Wire Wire Line
-	10500 8450 10900 8450
+	3800 8800 3300 8800
+Connection ~ 3800 8150
 Wire Wire Line
-	11950 7350 12100 7350
+	6350 5050 6350 6250
+$Comp
+L optos:FOD8001 U?
+U 1 1 5C8FA082
+P 5700 7200
+AR Path="/5C8FA082" Ref="U?"  Part="1" 
+AR Path="/5B19B7B2/5C8FA082" Ref="U1800"  Part="1" 
+AR Path="/5CBC3017/5B19B7B2/5C8FA082" Ref="U1800"  Part="1" 
+F 0 "U1800" H 6250 7475 50  0000 C CNN
+F 1 "FOD8001" H 6250 7384 50  0000 C CNN
+F 2 "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm" H 6650 7300 50  0001 L CNN
+F 3 "http://www.farnell.com/datasheets/2572437.pdf" H 6650 7200 50  0001 L CNN
+F 4 "Farnell" H 700 100 50  0001 C CNN "Distrib"
+F 5 "Farnell" H 700 100 50  0001 C CNN "Distrib Name"
+F 6 "2825067" H 700 100 50  0001 C CNN "Distrib PN"
+F 7 "ON SEMICONDUCTOR" H 700 100 50  0001 C CNN "MFG Name"
+F 8 "FOD8001" H 700 100 50  0001 C CNN "MFG Part Num"
+	1    5700 7200
+	-1   0    0    -1  
+$EndComp
 Wire Wire Line
-	10700 7000 10700 7850
-Connection ~ 10700 7000
-Text HLabel 9500 8450 0    50   Input ~ 0
+	5750 6550 6100 6550
+Connection ~ 6100 6550
+Wire Wire Line
+	5750 6850 6350 6850
+Connection ~ 6350 6850
+Wire Wire Line
+	6350 6850 6600 6850
+Wire Wire Line
+	6600 6650 6600 6550
+Wire Wire Line
+	6600 6550 6100 6550
+Wire Wire Line
+	3250 6750 3250 6850
+Wire Wire Line
+	3250 6850 3650 6850
+Wire Wire Line
+	4600 7450 3650 7450
+Connection ~ 3650 7450
+$Comp
+L Device:CP_Small C1806
+U 1 1 5C9DFD55
+P 3250 7350
+F 0 "C1806" H 3338 7396 50  0000 L CNN
+F 1 "0.1uF 35V Tant" H 3338 7305 50  0000 L CNN
+F 2 "Capacitor_Tantalum_SMD:CP_EIA-3216-18_Kemet-A" H 3250 7350 50  0001 C CNN
+F 3 "http://datasheet.octopart.com/T491A104K035AT-Kemet-datasheet-5314837.pdf" H 3250 7350 50  0001 C CNN
+F 4 "KEMET" H 3250 7350 50  0001 C CNN "MFG Name"
+F 5 "T491A104K035AT" H 3250 7350 50  0001 C CNN "MFG Part Num"
+F 6 "Digi-key" H 3250 7350 50  0001 C CNN "Distrib Name"
+F 7 "Digi-key" H 800 100 50  0001 C CNN "Distrib"
+F 8 "https://www.digikey.fr/product-detail/fr/kemet/T491A104K035AT/399-3676-1-ND/819001" H 800 100 50  0001 C CNN "Distrib Link"
+F 9 "399-3676-1-ND" H 800 100 50  0001 C CNN "Distrib PN"
+	1    3250 7350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3250 7150 3250 7250
+$Comp
+L Device:CP_Small C1401
+U 1 1 5C4FB910
+P 3250 6650
+F 0 "C1401" H 3338 6696 50  0000 L CNN
+F 1 "0.1uF 35V Tant" H 3338 6605 50  0000 L CNN
+F 2 "Capacitor_Tantalum_SMD:CP_EIA-3216-18_Kemet-A" H 3250 6650 50  0001 C CNN
+F 3 "http://datasheet.octopart.com/T491A104K035AT-Kemet-datasheet-5314837.pdf" H 3250 6650 50  0001 C CNN
+F 4 "KEMET" H 3250 6650 50  0001 C CNN "MFG Name"
+F 5 "T491A104K035AT" H 3250 6650 50  0001 C CNN "MFG Part Num"
+F 6 "Digi-key" H 3250 6650 50  0001 C CNN "Distrib Name"
+F 7 "Digi-key" H 800 100 50  0001 C CNN "Distrib"
+F 8 "https://www.digikey.fr/product-detail/fr/kemet/T491A104K035AT/399-3676-1-ND/819001" H 800 100 50  0001 C CNN "Distrib Link"
+F 9 "399-3676-1-ND" H 800 100 50  0001 C CNN "Distrib PN"
+	1    3250 6650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6550 9000 6550 9100
+Wire Wire Line
+	6550 8800 6100 8800
+$Comp
+L Device:CP_Small C1608
+U 1 1 5C855501
+P 6550 8900
+F 0 "C1608" H 6638 8946 50  0000 L CNN
+F 1 "0.1uF 35V Tant" H 6638 8855 50  0000 L CNN
+F 2 "Capacitor_Tantalum_SMD:CP_EIA-3216-18_Kemet-A" H 6550 8900 50  0001 C CNN
+F 3 "http://datasheet.octopart.com/T491A104K035AT-Kemet-datasheet-5314837.pdf" H 6550 8900 50  0001 C CNN
+F 4 "KEMET" H 6550 8900 50  0001 C CNN "MFG Name"
+F 5 "T491A104K035AT" H 6550 8900 50  0001 C CNN "MFG Part Num"
+F 6 "Digi-key" H 6550 8900 50  0001 C CNN "Distrib Name"
+F 7 "Digi-key" H 800 100 50  0001 C CNN "Distrib"
+F 8 "https://www.digikey.fr/product-detail/fr/kemet/T491A104K035AT/399-3676-1-ND/819001" H 800 100 50  0001 C CNN "Distrib Link"
+F 9 "399-3676-1-ND" H 800 100 50  0001 C CNN "Distrib PN"
+	1    6550 8900
+	1    0    0    -1  
+$EndComp
+Text Label 9150 8900 2    60   ~ 0
+CRD_CT
+Text HLabel 1750 9000 0    50   Output ~ 0
 CARD_CT
-Text HLabel 9500 8050 0    50   Input ~ 0
-CARD_CLK
-Text HLabel 9500 7950 0    50   Input ~ 0
-CARD_RESET
-Text HLabel 9850 7000 0    50   UnSpc ~ 0
-CARD_POWER
-Text HLabel 12850 7950 2    50   Input ~ 0
-CARD_VPP
-Text HLabel 12850 8050 2    50   BiDi ~ 0
-CARD_IO
+Wire Wire Line
+	3650 8450 3650 9100
+Connection ~ 3650 9100
+Wire Wire Line
+	1750 9000 4650 9000
+Wire Wire Line
+	3300 9100 3650 9100
+Wire Wire Line
+	3300 8900 3300 8800
 $Comp
-L leia:GND #PWR0131
-U 1 1 5B01D1B7
-P 10050 6400
-F 0 "#PWR0131" H 10050 6150 50  0001 C CNN
-F 1 "GND" H 10050 6250 50  0000 C CNN
-F 2 "" H 10050 6400 60  0000 C CNN
-F 3 "" H 10050 6400 60  0000 C CNN
-	1    10050 6400
+L Device:CP_Small C1601
+U 1 1 5C50233C
+P 3300 9000
+F 0 "C1601" H 3388 9046 50  0000 L CNN
+F 1 "0.1uF 35V Tant" H 3388 8955 50  0000 L CNN
+F 2 "Capacitor_Tantalum_SMD:CP_EIA-3216-18_Kemet-A" H 3300 9000 50  0001 C CNN
+F 3 "http://datasheet.octopart.com/T491A104K035AT-Kemet-datasheet-5314837.pdf" H 3300 9000 50  0001 C CNN
+F 4 "KEMET" H 3300 9000 50  0001 C CNN "MFG Name"
+F 5 "T491A104K035AT" H 3300 9000 50  0001 C CNN "MFG Part Num"
+F 6 "Digi-key" H 3300 9000 50  0001 C CNN "Distrib Name"
+F 7 "Digi-key" H 800 100 50  0001 C CNN "Distrib"
+F 8 "https://www.digikey.fr/product-detail/fr/kemet/T491A104K035AT/399-3676-1-ND/819001" H 800 100 50  0001 C CNN "Distrib Link"
+F 9 "399-3676-1-ND" H 800 100 50  0001 C CNN "Distrib PN"
+	1    3300 9000
 	1    0    0    -1  
 $EndComp
 $Comp
-L leia:+3V3 #PWR0132
-U 1 1 5B01D334
-P 10050 6150
-F 0 "#PWR0132" H 10050 6000 50  0001 C CNN
-F 1 "+3V3" H 10050 6290 50  0000 C CNN
-F 2 "" H 10050 6150 60  0000 C CNN
-F 3 "" H 10050 6150 60  0000 C CNN
-	1    10050 6150
+L optos:FOD8001 U?
+U 1 1 5C43EB4F
+P 5750 8850
+AR Path="/5C43EB4F" Ref="U?"  Part="1" 
+AR Path="/5B19B7B2/5C43EB4F" Ref="U1600"  Part="1" 
+AR Path="/5CBC3017/5B19B7B2/5C43EB4F" Ref="U1600"  Part="1" 
+F 0 "U1600" H 6300 9125 50  0000 C CNN
+F 1 "FOD8001" H 6300 9034 50  0000 C CNN
+F 2 "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm" H 6700 8950 50  0001 L CNN
+F 3 "http://www.farnell.com/datasheets/2572437.pdf" H 6700 8850 50  0001 L CNN
+F 4 "Farnell" H 800 100 50  0001 C CNN "Distrib"
+F 5 "Farnell" H 800 100 50  0001 C CNN "Distrib Name"
+F 6 "2825067" H 800 100 50  0001 C CNN "Distrib PN"
+F 7 "ON SEMICONDUCTOR" H 800 100 50  0001 C CNN "MFG Name"
+F 8 "FOD8001" H 800 100 50  0001 C CNN "MFG Part Num"
+	1    5750 8850
+	-1   0    0    -1  
+$EndComp
+Connection ~ 12000 5200
+Wire Wire Line
+	10800 5200 12000 5200
+Text Label 10800 5200 0    60   ~ 0
+CRD_CT
+Wire Wire Line
+	3800 8800 4650 8800
+Wire Wire Line
+	3650 9100 4650 9100
+Wire Wire Line
+	3800 4750 4650 4750
+Wire Wire Line
+	3800 3450 4650 3450
+Connection ~ 3650 3750
+Wire Wire Line
+	3800 4050 4650 4050
+Wire Wire Line
+	3650 4350 4650 4350
+Wire Wire Line
+	10800 3650 12250 3650
+Connection ~ 12250 3650
+Wire Wire Line
+	13350 4350 13500 4350
+$Comp
+L power:GNDA #PWR0102
+U 1 1 5C661F5E
+P 12500 4100
+F 0 "#PWR0102" H 12500 3850 50  0001 C CNN
+F 1 "GNDA" H 12505 3927 50  0000 C CNN
+F 2 "" H 12500 4100 50  0001 C CNN
+F 3 "" H 12500 4100 50  0001 C CNN
+F 4 "" H 7550 4100 50  0001 C CNN "MFG Name"
+F 5 "" H 7550 4100 50  0001 C CNN "MFG Part Num"
+F 6 "" H 7550 4100 50  0001 C CNN "Distrib Name"
+F 7 "" H 7550 4100 50  0001 C CNN "Distrib Part Num"
+	1    12500 4100
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GNDA #PWR0108
+U 1 1 5C6625E6
+P 13500 4350
+F 0 "#PWR0108" H 13500 4100 50  0001 C CNN
+F 1 "GNDA" H 13505 4177 50  0000 C CNN
+F 2 "" H 13500 4350 50  0001 C CNN
+F 3 "" H 13500 4350 50  0001 C CNN
+F 4 "" H 7550 4100 50  0001 C CNN "MFG Name"
+F 5 "" H 7550 4100 50  0001 C CNN "MFG Part Num"
+F 6 "" H 7550 4100 50  0001 C CNN "Distrib Name"
+F 7 "" H 7550 4100 50  0001 C CNN "Distrib Part Num"
+	1    13500 4350
+	1    0    0    -1  
+$EndComp
+Connection ~ 13500 4350
+Wire Wire Line
+	13500 4350 13650 4350
+Wire Wire Line
+	12500 3850 12500 4100
+Connection ~ 13350 3850
+Wire Wire Line
+	13350 3850 13350 4000
+NoConn ~ 12650 3750
+Wire Wire Line
+	13150 3750 13650 3750
+Connection ~ 13650 3750
+Wire Wire Line
+	13650 3750 13650 3850
+Text Label 9150 6900 2    60   ~ 0
+CRD_IO
+Wire Notes Line width 79 rgb(150, 150, 150)
+	5250 10750 5200 1050
+Wire Wire Line
+	4650 6550 3800 6550
+Connection ~ 3650 6850
+Wire Wire Line
+	3650 6850 3650 7450
+Wire Wire Line
+	3650 6850 3650 6250
+Wire Wire Line
+	3800 8150 3800 7950
+$Comp
+L power:GNDD #PWR0103
+U 1 1 5C644369
+P 3800 2250
+F 0 "#PWR0103" H 3800 2000 50  0001 C CNN
+F 1 "GNDD" H 3804 2095 50  0000 C CNN
+F 2 "" H 3800 2250 50  0001 C CNN
+F 3 "" H 3800 2250 50  0001 C CNN
+F 4 "" H 6600 7250 50  0001 C CNN "MFG Name"
+F 5 "" H 6600 7250 50  0001 C CNN "MFG Part Num"
+F 6 "" H 6600 7250 50  0001 C CNN "Distrib Name"
+F 7 "" H 6600 7250 50  0001 C CNN "Distrib Part Num"
+	1    3800 2250
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GNDD #PWR0107
+U 1 1 5C64505B
+P 3650 10400
+F 0 "#PWR0107" H 3650 10150 50  0001 C CNN
+F 1 "GNDD" H 3654 10245 50  0000 C CNN
+F 2 "" H 3650 10400 50  0001 C CNN
+F 3 "" H 3650 10400 50  0001 C CNN
+F 4 "" H 6600 7250 50  0001 C CNN "MFG Name"
+F 5 "" H 6600 7250 50  0001 C CNN "MFG Part Num"
+F 6 "" H 6600 7250 50  0001 C CNN "Distrib Name"
+F 7 "" H 6600 7250 50  0001 C CNN "Distrib Part Num"
+	1    3650 10400
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:VDD #PWR0109
+U 1 1 5C65732A
+P 3800 7950
+F 0 "#PWR0109" H 3800 7800 50  0001 C CNN
+F 1 "VDD" H 3817 8123 50  0000 C CNN
+F 2 "" H 3800 7950 50  0001 C CNN
+F 3 "" H 3800 7950 50  0001 C CNN
+F 4 "" H 6600 7250 50  0001 C CNN "MFG Name"
+F 5 "" H 6600 7250 50  0001 C CNN "MFG Part Num"
+F 6 "" H 6600 7250 50  0001 C CNN "Distrib Name"
+F 7 "" H 6600 7250 50  0001 C CNN "Distrib Part Num"
+	1    3800 7950
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:VDD #PWR0112
+U 1 1 5C67B352
+P 3800 2800
+F 0 "#PWR0112" H 3800 2650 50  0001 C CNN
+F 1 "VDD" H 3817 2973 50  0000 C CNN
+F 2 "" H 3800 2800 50  0001 C CNN
+F 3 "" H 3800 2800 50  0001 C CNN
+F 4 "" H 6600 7250 50  0001 C CNN "MFG Name"
+F 5 "" H 6600 7250 50  0001 C CNN "MFG Part Num"
+F 6 "" H 6600 7250 50  0001 C CNN "Distrib Name"
+F 7 "" H 6600 7250 50  0001 C CNN "Distrib Part Num"
+	1    3800 2800
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:VDD #PWR0113
+U 1 1 5C68D418
+P 3800 1250
+F 0 "#PWR0113" H 3800 1100 50  0001 C CNN
+F 1 "VDD" H 3817 1423 50  0000 C CNN
+F 2 "" H 3800 1250 50  0001 C CNN
+F 3 "" H 3800 1250 50  0001 C CNN
+F 4 "" H 6600 7250 50  0001 C CNN "MFG Name"
+F 5 "" H 6600 7250 50  0001 C CNN "MFG Part Num"
+F 6 "" H 6600 7250 50  0001 C CNN "Distrib Name"
+F 7 "" H 6600 7250 50  0001 C CNN "Distrib Part Num"
+	1    3800 1250
+	1    0    0    -1  
+$EndComp
+Text Notes 6100 2050 0    79   ~ 0
+TruthTable\nVI Vled VO\nH  OFF H\nL   ON  L
+Wire Notes Line
+	6050 1550 6850 1550
+Wire Notes Line
+	6850 2100 6050 2100
+Wire Notes Line
+	6050 2100 6050 1550
+Wire Notes Line
+	6850 1550 6850 2100
+Wire Notes Line
+	6050 1700 6850 1700
+Wire Wire Line
+	5700 7150 6100 7150
+Wire Wire Line
+	6350 7450 6600 7450
+Wire Wire Line
+	6350 6850 6350 7450
+Wire Wire Line
+	6350 7450 6350 8450
+Connection ~ 6350 7450
+Wire Wire Line
+	5700 7450 6350 7450
+$Comp
+L Device:CP_Small C1801
+U 1 1 5C9FB7BD
+P 6600 7250
+F 0 "C1801" H 6688 7296 50  0000 L CNN
+F 1 "0.1uF 35V Tant" H 6688 7205 50  0000 L CNN
+F 2 "Capacitor_Tantalum_SMD:CP_EIA-3216-18_Kemet-A" H 6600 7250 50  0001 C CNN
+F 3 "http://datasheet.octopart.com/T491A104K035AT-Kemet-datasheet-5314837.pdf" H 6600 7250 50  0001 C CNN
+F 4 "KEMET" H 6600 7250 50  0001 C CNN "MFG Name"
+F 5 "T491A104K035AT" H 6600 7250 50  0001 C CNN "MFG Part Num"
+F 6 "Digi-key" H 6600 7250 50  0001 C CNN "Distrib Name"
+F 7 "Digi-key" H 800 100 50  0001 C CNN "Distrib"
+F 8 "https://www.digikey.fr/product-detail/fr/kemet/T491A104K035AT/399-3676-1-ND/819001" H 800 100 50  0001 C CNN "Distrib Link"
+F 9 "399-3676-1-ND" H 800 100 50  0001 C CNN "Distrib PN"
+	1    6600 7250
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	10050 6400 10050 6300
+	6600 7450 6600 7350
 Wire Wire Line
-	10050 6300 9850 6300
-Wire Wire Line
-	10050 6150 10050 6200
-Wire Wire Line
-	10050 6200 9850 6200
-Text HLabel 9850 6300 0    50   UnSpc ~ 0
+	3250 4750 3800 4750
+Text HLabel 3600 1900 0    50   UnSpc ~ 0
 GND
-Text HLabel 9850 6200 0    50   UnSpc ~ 0
+Text HLabel 3600 1800 0    50   UnSpc ~ 0
 +3V3
-NoConn ~ 11800 8150
-NoConn ~ 10900 8150
-Wire Wire Line
-	10700 7000 11800 7000
-Wire Wire Line
-	11800 7050 11800 7000
-Connection ~ 11800 7000
-Wire Wire Line
-	11800 7000 12100 7000
-Wire Wire Line
-	12100 7000 12100 7050
 $Comp
-L Device:R_Small R1002
-U 1 1 5CF7CF14
-P 12050 8750
-F 0 "R1002" V 12130 8750 50  0000 C CNN
-F 1 "10" V 12050 8750 50  0000 C CNN
-F 2 "Resistor_SMD:R_0603_1608Metric" V 11980 8750 30  0001 C CNN
-F 3 "" H 12050 8750 30  0000 C CNN
-F 4 "FARNELL" H 1550 1050 50  0001 C CNN "Distrib"
-F 5 "https://fr.farnell.com/vishay/crcw060310k0fkeahp/res-couche-epaisse-10k-1-0-25w/dp/1738918" H 1550 1050 50  0001 C CNN "Distrib Link"
-F 6 "1738918" H 1550 1050 50  0001 C CNN "Distrib PN"
-F 7 "Vishay" H 1550 1050 50  0001 C CNN "MFG Name"
-F 8 "CRCW060310K0FKEAHP" H 1550 1050 50  0001 C CNN "MFG Part Num"
-	1    12050 8750
+L Connector_Generic:Conn_02x03_Odd_Even J1001
+U 1 1 5C60A6A0
+P 12850 3750
+F 0 "J1001" H 12900 4150 50  0000 C CNN
+F 1 "FILTER" H 12900 4050 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_2x03_P2.54mm_Vertical" H 12850 3750 50  0001 C CNN
+F 3 "~" H 12850 3750 50  0001 C CNN
+F 4 "Molex" H 7000 7100 50  0001 C CNN "MFG Name"
+F 5 "90131-0763" H 7000 7100 50  0001 C CNN "MFG Part Num"
+F 6 "Farnell" H 7000 7100 50  0001 C CNN "Distrib Name"
+F 7 "Farnell" H 1750 -3050 50  0001 C CNN "Distrib"
+F 8 "9733574" H 1750 -3050 50  0001 C CNN "Distrib PN"
+	1    12850 3750
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	12050 8850 12050 8950
+	6100 8150 6550 8150
+Wire Wire Line
+	6100 4750 6100 5950
+Wire Wire Line
+	6100 6550 6100 7150
+Connection ~ 6100 7150
+Wire Wire Line
+	6100 7150 6600 7150
+Wire Wire Line
+	6100 7150 6100 8150
 $Comp
-L leia:GND #PWR0103
-U 1 1 5CF7F199
-P 11850 8950
-F 0 "#PWR0103" H 11850 8700 50  0001 C CNN
-F 1 "GND" H 11850 8800 50  0000 C CNN
-F 2 "" H 11850 8950 60  0000 C CNN
-F 3 "" H 11850 8950 60  0000 C CNN
-	1    11850 8950
+L power:VDDA #PWR0101
+U 1 1 5C6D027B
+P 14400 3250
+F 0 "#PWR0101" H 14400 3100 50  0001 C CNN
+F 1 "VDDA" H 14417 3423 50  0000 C CNN
+F 2 "" H 14400 3250 50  0001 C CNN
+F 3 "" H 14400 3250 50  0001 C CNN
+	1    14400 3250
+	1    0    0    -1  
+$EndComp
+Connection ~ 14400 4800
+Wire Wire Line
+	14400 4800 15150 4800
+Wire Wire Line
+	5750 4250 9100 4250
+Wire Wire Line
+	10800 4800 12450 4800
+Wire Wire Line
+	12000 4000 12000 5200
+Wire Wire Line
+	12000 3400 12000 3800
+Wire Wire Line
+	14400 4000 14400 4800
+Wire Wire Line
+	14400 3250 14400 3800
+Wire Wire Line
+	5750 8900 9150 8900
+$Comp
+L Device:R_Small R1422
+U 1 1 5C89D75F
+P 2700 6250
+F 0 "R1422" H 2500 6300 50  0000 C CNN
+F 1 "22k" H 2550 6200 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 2630 6250 30  0001 C CNN
+F 3 "" H 2700 6250 30  0000 C CNN
+F 4 "Vishay" H 2700 6250 50  0001 C CNN "MFG Name"
+F 5 "RCA060320K0FKEA" H 2700 6250 50  0001 C CNN "MFG Part Num"
+F 6 "Farnell" H 2700 6250 50  0001 C CNN "Distrib"
+F 7 "2616587" H 2700 6250 50  0001 C CNN "Distrib PN"
+F 8 "Farnell" H -300 150 50  0001 C CNN "Distrib Name"
+	1    2700 6250
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_Small R1007
+U 1 1 5C930058
+P 14400 3900
+F 0 "R1007" H 14600 3900 50  0000 C CNN
+F 1 "22k" H 14550 3850 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 14330 3900 30  0001 C CNN
+F 3 "" H 14400 3900 30  0001 C CNN
+F 4 "Vishay" H 14400 3900 50  0001 C CNN "MFG Name"
+F 5 "RCA060320K0FKEA" H 14400 3900 50  0001 C CNN "MFG Part Num"
+F 6 "2616587" H 14400 3900 50  0001 C CNN "Distrib PN"
+F 7 "Farnell" H 14400 3900 50  0001 C CNN "Distrib"
+F 8 "Farnell" H 1750 -3050 50  0001 C CNN "Distrib Name"
+	1    14400 3900
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	12050 7850 12050 8650
+	1750 8250 4650 8250
 Wire Wire Line
-	11850 8950 11850 8450
+	2500 4850 4650 4850
 Wire Wire Line
-	11850 8450 11800 8450
+	2500 4150 4650 4150
+Wire Wire Line
+	2500 3550 4650 3550
+Wire Wire Line
+	3650 6850 4650 6850
+$Comp
+L power:VDDA #PWR0118
+U 1 1 5CAA88D4
+P 7650 4650
+F 0 "#PWR0118" H 7650 4500 50  0001 C CNN
+F 1 "VDDA" H 7667 4823 50  0000 C CNN
+F 2 "" H 7650 4650 50  0001 C CNN
+F 3 "" H 7650 4650 50  0001 C CNN
+	1    7650 4650
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_Small R1306
+U 1 1 5CAD467F
+P 7650 5350
+F 0 "R1306" H 7450 5400 50  0000 C CNN
+F 1 "10k" H 7500 5300 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 7580 5350 30  0001 C CNN
+F 3 "" H 7650 5350 30  0000 C CNN
+F 4 "Vishay" H 7650 5350 50  0001 C CNN "MFG Name"
+F 5 " CRCW060310K0JNEA " H 7650 5350 50  0001 C CNN "MFG Part Num"
+F 6 "2693095" H 7650 5350 50  0001 C CNN "Distrib PN"
+F 7 "Farnell" H 7650 5350 50  0001 C CNN "Distrib"
+F 8 "Farnell" H 800 350 50  0001 C CNN "Distrib Name"
+	1    7650 5350
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GNDA #PWR0120
+U 1 1 5CAD4DF1
+P 7650 5600
+F 0 "#PWR0120" H 7650 5350 50  0001 C CNN
+F 1 "GNDA" H 7655 5427 50  0000 C CNN
+F 2 "" H 7650 5600 50  0001 C CNN
+F 3 "" H 7650 5600 50  0001 C CNN
+	1    7650 5600
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:VDDA #PWR0121
+U 1 1 5CB13902
+P 7900 8000
+F 0 "#PWR0121" H 7900 7850 50  0001 C CNN
+F 1 "VDDA" H 7917 8173 50  0000 C CNN
+F 2 "" H 7900 8000 50  0001 C CNN
+F 3 "" H 7900 8000 50  0001 C CNN
+	1    7900 8000
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_Small R1506
+U 1 1 5CB1415C
+P 7900 9100
+F 0 "R1506" H 7700 9150 50  0000 C CNN
+F 1 "10k" H 7750 9050 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 7830 9100 30  0001 C CNN
+F 3 "" H 7900 9100 30  0000 C CNN
+F 4 "Vishay" H 7900 9100 50  0001 C CNN "MFG Name"
+F 5 "CRCW060310K0JNEA " H 7900 9100 50  0001 C CNN "MFG Part Num"
+F 6 "2693095" H 7900 9100 50  0001 C CNN "Distrib PN"
+F 7 "Farnell" H 7900 9100 50  0001 C CNN "Distrib"
+F 8 "Farnell" H 800 750 50  0001 C CNN "Distrib Name"
+	1    7900 9100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7900 8650 9150 8650
+$Comp
+L power:GNDA #PWR0123
+U 1 1 5CB4200E
+P 7900 9300
+F 0 "#PWR0123" H 7900 9050 50  0001 C CNN
+F 1 "GNDA" H 7905 9127 50  0000 C CNN
+F 2 "" H 7900 9300 50  0001 C CNN
+F 3 "" H 7900 9300 50  0001 C CNN
+	1    7900 9300
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:Jumper_NC_Small JP?
+U 1 1 5CB86702
+P 7400 8350
+AR Path="/5B22B7CD/5CB86702" Ref="JP?"  Part="1" 
+AR Path="/5B19B7B2/5CB86702" Ref="JP1500"  Part="1" 
+AR Path="/5CBC3017/5B19B7B2/5CB86702" Ref="JP1500"  Part="1" 
+F 0 "JP1500" H 7050 8400 50  0000 L CNN
+F 1 "TEARING" H 7445 8398 50  0000 L CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 7400 8350 50  0001 C CNN
+F 3 "~" H 7400 8350 50  0001 C CNN
+F 4 "Molex" V 7400 8350 50  0001 C CNN "MFG Name"
+F 5 "90120-0762" V 7400 8350 50  0001 C CNN "MFG Part Num"
+F 6 "2751456" V 7400 8350 50  0001 C CNN "Distrib PN"
+F 7 "Farnell" V 7400 8350 50  0001 C CNN "Distrib"
+F 8 "Farnell" H 800 450 50  0001 C CNN "Distrib Name"
+	1    7400 8350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7500 8350 7600 8350
+$Comp
+L optos:FOD8001 U?
+U 1 1 5C43E931
+P 4650 6600
+AR Path="/5C43E931" Ref="U?"  Part="1" 
+AR Path="/5B19B7B2/5C43E931" Ref="U1400"  Part="1" 
+AR Path="/5CBC3017/5B19B7B2/5C43E931" Ref="U1400"  Part="1" 
+F 0 "U1400" H 5200 6875 50  0000 C CNN
+F 1 "FOD8001" H 5200 6784 50  0000 C CNN
+F 2 "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm" H 5600 6700 50  0001 L CNN
+F 3 "http://www.farnell.com/datasheets/2572437.pdf" H 5600 6600 50  0001 L CNN
+F 4 "Farnell" H 800 100 50  0001 C CNN "Distrib"
+F 5 "Farnell" H 800 100 50  0001 C CNN "Distrib Name"
+F 6 "2825067" H 800 100 50  0001 C CNN "Distrib PN"
+F 7 "ON SEMICONDUCTOR" H 800 100 50  0001 C CNN "MFG Name"
+F 8 "FOD8001" H 800 100 50  0001 C CNN "MFG Part Num"
+	1    4650 6600
+	1    0    0    -1  
+$EndComp
+Connection ~ 3800 6550
+Wire Wire Line
+	3800 6550 3250 6550
+Wire Wire Line
+	2800 6050 2900 6050
+$Comp
+L power:VDD #PWR0110
+U 1 1 5CC54166
+P 2800 5800
+F 0 "#PWR0110" H 2800 5650 50  0001 C CNN
+F 1 "VDD" H 2817 5973 50  0000 C CNN
+F 2 "" H 2800 5800 50  0001 C CNN
+F 3 "" H 2800 5800 50  0001 C CNN
+F 4 "" H 5600 10250 50  0001 C CNN "MFG Name"
+F 5 "" H 5600 10250 50  0001 C CNN "MFG Part Num"
+F 6 "" H 5600 10250 50  0001 C CNN "Distrib Name"
+F 7 "" H 5600 10250 50  0001 C CNN "Distrib Part Num"
+	1    2800 5800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2800 5800 2800 6050
+Text HLabel 1750 7600 0    50   BiDi ~ 0
+CARD_~R~W
+Wire Wire Line
+	2900 7350 4600 7350
+Wire Wire Line
+	2700 6350 2700 6650
+Connection ~ 2700 6650
+Wire Wire Line
+	2650 7050 2900 7050
+Wire Wire Line
+	2900 7050 2900 7350
+Wire Wire Line
+	2650 6950 2700 6950
+Wire Wire Line
+	2650 7250 3100 7250
+Wire Wire Line
+	3100 7250 3100 7600
+Wire Wire Line
+	3100 7600 1750 7600
+Wire Wire Line
+	2300 7450 2300 7750
+Wire Wire Line
+	2300 6750 2300 6400
+Wire Wire Line
+	2700 6950 2700 6650
+$Comp
+L Device:CP_Small C1902
+U 1 1 5D20BE1B
+P 1900 6650
+F 0 "C1902" H 1400 6900 50  0000 L CNN
+F 1 "0.1uF 35V Tant" H 1400 6800 50  0000 L CNN
+F 2 "Capacitor_Tantalum_SMD:CP_EIA-3216-18_Kemet-A" H 1900 6650 50  0001 C CNN
+F 3 "http://datasheet.octopart.com/T491A104K035AT-Kemet-datasheet-5314837.pdf" H 1900 6650 50  0001 C CNN
+F 4 "KEMET" H 1900 6650 50  0001 C CNN "MFG Name"
+F 5 "T491A104K035AT" H 1900 6650 50  0001 C CNN "MFG Part Num"
+F 6 "Digi-key" H 1900 6650 50  0001 C CNN "Distrib Name"
+F 7 "Digi-key" H -550 -600 50  0001 C CNN "Distrib"
+F 8 "https://www.digikey.fr/product-detail/fr/kemet/T491A104K035AT/399-3676-1-ND/819001" H -550 -600 50  0001 C CNN "Distrib Link"
+F 9 "399-3676-1-ND" H -550 -600 50  0001 C CNN "Distrib PN"
+	1    1900 6650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1900 6550 1900 6400
+Wire Wire Line
+	1900 6400 2300 6400
+$Comp
+L mux:ADG719-EP U1900
+U 1 1 5D092D3F
+P 2300 7100
+F 0 "U1900" H 2100 7400 60  0000 C CNN
+F 1 "ADG719-EP" H 2300 6800 60  0000 C CNN
+F 2 "Package_TO_SOT_SMD:TSOT-23-6" H 2300 7100 60  0001 C CNN
+F 3 "www.farnell.com/datasheets/2331755.pdf" H 2300 7100 60  0001 C CNN
+F 4 "Farnell" H 2300 7100 50  0001 C CNN "Distrib"
+F 5 "Farnell" H 2300 7100 50  0001 C CNN "Distrib Name"
+F 6 "1838893" H 2300 7100 50  0001 C CNN "Distrib PN"
+F 7 "Analog Device" H 2300 7100 50  0001 C CNN "MFG Name"
+F 8 "ADG719BRTZ-REEL7" H 2300 7100 50  0001 C CNN "MFG Part Num"
+	1    2300 7100
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	2700 6650 4650 6650
+Wire Wire Line
+	3250 7150 3800 7150
+Wire Wire Line
+	3800 7150 3800 6550
+Connection ~ 3800 7150
+Wire Wire Line
+	3800 7150 4600 7150
+Wire Wire Line
+	3250 7450 3650 7450
+Wire Wire Line
+	1900 6750 1900 7750
+Wire Wire Line
+	1900 7750 2300 7750
+Text Label 4250 7350 0    50   ~ 0
+IO_OUT
+Text Label 4250 6650 0    50   ~ 0
+IO_IN
+Wire Wire Line
+	3650 9100 3650 9750
+Wire Wire Line
+	6350 9100 6350 9750
+$Comp
+L optos:FOD8001 U?
+U 1 1 5CA3F835
+P 4650 9500
+AR Path="/5CA3F835" Ref="U?"  Part="1" 
+AR Path="/5B19B7B2/5CA3F835" Ref="U1700"  Part="1" 
+AR Path="/5CBC3017/5B19B7B2/5CA3F835" Ref="U1700"  Part="1" 
+F 0 "U1700" H 5200 9775 50  0000 C CNN
+F 1 "FOD8001" H 5200 9684 50  0000 C CNN
+F 2 "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm" H 5600 9600 50  0001 L CNN
+F 3 "http://www.farnell.com/datasheets/2572437.pdf" H 5600 9500 50  0001 L CNN
+F 4 "Farnell" H -300 750 50  0001 C CNN "Distrib"
+F 5 "Farnell" H -300 750 50  0001 C CNN "Distrib Name"
+F 6 "2825067" H -300 750 50  0001 C CNN "Distrib PN"
+F 7 "ON SEMICONDUCTOR" H -300 750 50  0001 C CNN "MFG Name"
+F 8 "FOD8001" H -300 750 50  0001 C CNN "MFG Part Num"
+	1    4650 9500
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:CP_Small C1708
+U 1 1 5CA410A1
+P 6550 9650
+F 0 "C1708" H 6638 9696 50  0000 L CNN
+F 1 "0.1uF 35V Tant" H 6638 9605 50  0000 L CNN
+F 2 "Capacitor_Tantalum_SMD:CP_EIA-3216-18_Kemet-A" H 6550 9650 50  0001 C CNN
+F 3 "http://datasheet.octopart.com/T491A104K035AT-Kemet-datasheet-5314837.pdf" H 6550 9650 50  0001 C CNN
+F 4 "KEMET" H 6550 9650 50  0001 C CNN "MFG Name"
+F 5 "T491A104K035AT" H 6550 9650 50  0001 C CNN "MFG Part Num"
+F 6 "Digi-key" H 6550 9650 50  0001 C CNN "Distrib Name"
+F 7 "Digi-key" H 800 850 50  0001 C CNN "Distrib"
+F 8 "https://www.digikey.fr/product-detail/fr/kemet/T491A104K035AT/399-3676-1-ND/819001" H 800 850 50  0001 C CNN "Distrib Link"
+F 9 "399-3676-1-ND" H 800 850 50  0001 C CNN "Distrib PN"
+	1    6550 9650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3300 9750 3650 9750
+Wire Wire Line
+	5750 9450 6100 9450
+Wire Wire Line
+	6100 9450 6100 8800
+Wire Wire Line
+	5750 9650 8950 9650
+$Comp
+L Device:CP_Small C1701
+U 1 1 5CA41A5B
+P 3300 9550
+F 0 "C1701" H 3388 9596 50  0000 L CNN
+F 1 "0.1uF 35V Tant" H 3388 9505 50  0000 L CNN
+F 2 "Capacitor_Tantalum_SMD:CP_EIA-3216-18_Kemet-A" H 3300 9550 50  0001 C CNN
+F 3 "http://datasheet.octopart.com/T491A104K035AT-Kemet-datasheet-5314837.pdf" H 3300 9550 50  0001 C CNN
+F 4 "KEMET" H 3300 9550 50  0001 C CNN "MFG Name"
+F 5 "T491A104K035AT" H 3300 9550 50  0001 C CNN "MFG Part Num"
+F 6 "Digi-key" H 3300 9550 50  0001 C CNN "Distrib Name"
+F 7 "Digi-key" H 800 650 50  0001 C CNN "Distrib"
+F 8 "https://www.digikey.fr/product-detail/fr/kemet/T491A104K035AT/399-3676-1-ND/819001" H 800 650 50  0001 C CNN "Distrib Link"
+F 9 "399-3676-1-ND" H 800 650 50  0001 C CNN "Distrib PN"
+	1    3300 9550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3300 9650 3300 9750
+Wire Wire Line
+	3300 9450 3800 9450
+Wire Wire Line
+	5750 9750 6350 9750
+Wire Wire Line
+	6100 9450 6550 9450
+Wire Wire Line
+	6550 9450 6550 9550
+Connection ~ 6100 9450
+Connection ~ 6350 9750
+Wire Wire Line
+	6350 9750 6350 10450
+Wire Wire Line
+	6350 9750 6550 9750
+Text Label 8950 9650 2    60   ~ 0
+TRIGGER_OUT
+Wire Wire Line
+	1800 9550 4650 9550
+Wire Wire Line
+	3800 8800 3800 9450
+Connection ~ 3800 9450
+Wire Wire Line
+	3800 9450 4650 9450
+Connection ~ 3650 9750
+Wire Wire Line
+	3650 9750 3650 10400
+Wire Wire Line
+	3650 9750 4650 9750
+$Comp
+L power:GNDA #PWR0114
+U 1 1 5CC7AA85
+P 9150 9850
+F 0 "#PWR0114" H 9150 9600 50  0001 C CNN
+F 1 "GNDA" H 9155 9677 50  0000 C CNN
+F 2 "" H 9150 9850 50  0001 C CNN
+F 3 "" H 9150 9850 50  0001 C CNN
+	1    9150 9850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5750 8350 7300 8350
+Wire Wire Line
+	5750 4950 7350 4950
+Wire Wire Line
+	1700 7000 1950 7000
+$Comp
+L Transistor_FET:BSS84 Q5002
+U 1 1 5CB5C89B
+P 7800 8350
+F 0 "Q5002" H 8006 8396 50  0000 L CNN
+F 1 "BSS84" H 8006 8305 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 8000 8275 50  0001 L CIN
+F 3 "http://assets.nexperia.com/documents/data-sheet/BSS84.pdf" H 7800 8350 50  0001 L CNN
+F 4 "Farnell" H 0   0   50  0001 C CNN "Distrib Name"
+F 5 "2323155" H 0   0   50  0001 C CNN "Distrib PN"
+F 6 "2323155" H 0   0   50  0001 C CNN "Distrib Part Num"
+F 7 "ON SEMICONDUCTOR" H 0   0   50  0001 C CNN "MFG Name"
+F 8 "BSS84" H 0   0   50  0001 C CNN "MFG Part Num"
+	1    7800 8350
+	1    0    0    1   
+$EndComp
+$Comp
+L optos:FOD8001 U?
+U 1 1 5CA7C4E3
+P 4650 6000
+AR Path="/5CA7C4E3" Ref="U?"  Part="1" 
+AR Path="/5B19B7B2/5CA7C4E3" Ref="U5001"  Part="1" 
+AR Path="/5CBC3017/5B19B7B2/5CA7C4E3" Ref="U5001"  Part="1" 
+F 0 "U5001" H 5200 6275 50  0000 C CNN
+F 1 "FOD8001" H 5200 6184 50  0000 C CNN
+F 2 "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm" H 5600 6100 50  0001 L CNN
+F 3 "http://www.farnell.com/datasheets/2572437.pdf" H 5600 6000 50  0001 L CNN
+F 4 "Farnell" H 800 -500 50  0001 C CNN "Distrib"
+F 5 "Farnell" H 800 -500 50  0001 C CNN "Distrib Name"
+F 6 "2825067" H 800 -500 50  0001 C CNN "Distrib PN"
+F 7 "ON SEMICONDUCTOR" H 800 -500 50  0001 C CNN "MFG Name"
+F 8 "FOD8001" H 800 -500 50  0001 C CNN "MFG Part Num"
+	1    4650 6000
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:CP_Small C5002
+U 1 1 5CA7D439
+P 6600 6150
+F 0 "C5002" H 6688 6196 50  0000 L CNN
+F 1 "0.1uF 35V Tant" H 6688 6105 50  0000 L CNN
+F 2 "Capacitor_Tantalum_SMD:CP_EIA-3216-18_Kemet-A" H 6600 6150 50  0001 C CNN
+F 3 "http://datasheet.octopart.com/T491A104K035AT-Kemet-datasheet-5314837.pdf" H 6600 6150 50  0001 C CNN
+F 4 "KEMET" H 6600 6150 50  0001 C CNN "MFG Name"
+F 5 "T491A104K035AT" H 6600 6150 50  0001 C CNN "MFG Part Num"
+F 6 "Digi-key" H 6600 6150 50  0001 C CNN "Distrib Name"
+F 7 "Digi-key" H 800 -500 50  0001 C CNN "Distrib"
+F 8 "https://www.digikey.fr/product-detail/fr/kemet/T491A104K035AT/399-3676-1-ND/819001" H 800 -500 50  0001 C CNN "Distrib Link"
+F 9 "399-3676-1-ND" H 800 -500 50  0001 C CNN "Distrib PN"
+	1    6600 6150
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:CP_Small C5001
+U 1 1 5CA7E738
+P 3250 6050
+F 0 "C5001" H 3338 6096 50  0000 L CNN
+F 1 "0.1uF 35V Tant" H 3338 6005 50  0000 L CNN
+F 2 "Capacitor_Tantalum_SMD:CP_EIA-3216-18_Kemet-A" H 3250 6050 50  0001 C CNN
+F 3 "http://datasheet.octopart.com/T491A104K035AT-Kemet-datasheet-5314837.pdf" H 3250 6050 50  0001 C CNN
+F 4 "KEMET" H 3250 6050 50  0001 C CNN "MFG Name"
+F 5 "T491A104K035AT" H 3250 6050 50  0001 C CNN "MFG Part Num"
+F 6 "Digi-key" H 3250 6050 50  0001 C CNN "Distrib Name"
+F 7 "Digi-key" H 800 -500 50  0001 C CNN "Distrib"
+F 8 "https://www.digikey.fr/product-detail/fr/kemet/T491A104K035AT/399-3676-1-ND/819001" H 800 -500 50  0001 C CNN "Distrib Link"
+F 9 "399-3676-1-ND" H 800 -500 50  0001 C CNN "Distrib PN"
+	1    3250 6050
+	1    0    0    -1  
+$EndComp
+$Comp
+L mux:ADG719-EP U5002
+U 1 1 5CA7F9AD
+P 8250 7000
+F 0 "U5002" H 8350 7300 60  0000 C CNN
+F 1 "ADG719-EP" H 8250 6700 60  0000 C CNN
+F 2 "Package_TO_SOT_SMD:TSOT-23-6" H 8250 7000 60  0001 C CNN
+F 3 "www.farnell.com/datasheets/2331755.pdf" H 8250 7000 60  0001 C CNN
+F 4 "Farnell" H 8250 7000 50  0001 C CNN "Distrib"
+F 5 "Farnell" H 8250 7000 50  0001 C CNN "Distrib Name"
+F 6 "1838893" H 8250 7000 50  0001 C CNN "Distrib PN"
+F 7 "Analog Device" H 8250 7000 50  0001 C CNN "MFG Name"
+F 8 "ADG719BRTZ-REEL7" H 8250 7000 50  0001 C CNN "MFG Part Num"
+	1    8250 7000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5700 7250 7400 7250
+Wire Wire Line
+	7400 7250 7400 6950
+Wire Wire Line
+	7400 6950 7750 6950
+Wire Wire Line
+	7900 7150 7200 7150
+Wire Wire Line
+	7200 7150 7200 6150
+Wire Wire Line
+	7200 6150 5750 6150
+Wire Wire Line
+	5750 6250 6350 6250
+Wire Wire Line
+	5750 5950 6100 5950
+Wire Wire Line
+	6600 5950 6600 6050
+Wire Wire Line
+	3800 4750 3800 5950
+Wire Wire Line
+	2300 6400 2300 5800
+Connection ~ 2300 6400
+$Comp
+L power:VDD #PWR0148
+U 1 1 5CC032C3
+P 2300 5800
+F 0 "#PWR0148" H 2300 5650 50  0001 C CNN
+F 1 "VDD" H 2317 5973 50  0000 C CNN
+F 2 "" H 2300 5800 50  0001 C CNN
+F 3 "" H 2300 5800 50  0001 C CNN
+F 4 "" H 5100 10250 50  0001 C CNN "MFG Name"
+F 5 "" H 5100 10250 50  0001 C CNN "MFG Part Num"
+F 6 "" H 5100 10250 50  0001 C CNN "Distrib Name"
+F 7 "" H 5100 10250 50  0001 C CNN "Distrib Part Num"
+	1    2300 5800
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GNDD #PWR0149
+U 1 1 5CC03693
+P 2300 7850
+F 0 "#PWR0149" H 2300 7600 50  0001 C CNN
+F 1 "GNDD" H 2304 7695 50  0000 C CNN
+F 2 "" H 2300 7850 50  0001 C CNN
+F 3 "" H 2300 7850 50  0001 C CNN
+F 4 "" H 5250 4700 50  0001 C CNN "MFG Name"
+F 5 "" H 5250 4700 50  0001 C CNN "MFG Part Num"
+F 6 "" H 5250 4700 50  0001 C CNN "Distrib Name"
+F 7 "" H 5250 4700 50  0001 C CNN "Distrib Part Num"
+	1    2300 7850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3650 7450 3650 8450
+Wire Wire Line
+	2300 7850 2300 7750
+Connection ~ 2300 7750
+Wire Wire Line
+	3100 7250 3100 6050
+Wire Wire Line
+	3100 6050 4650 6050
+Connection ~ 3100 7250
+Wire Wire Line
+	3250 5950 3800 5950
+Wire Wire Line
+	3250 6150 3250 6250
+Wire Wire Line
+	3250 6250 3650 6250
+Connection ~ 3650 6250
+Wire Wire Line
+	3650 6250 3650 5050
+Wire Wire Line
+	3650 6250 4650 6250
+Connection ~ 3800 5950
+Wire Wire Line
+	3800 5950 3800 6550
+Wire Wire Line
+	3800 5950 4650 5950
+Connection ~ 6100 5950
+Wire Wire Line
+	6100 5950 6100 6550
+Wire Wire Line
+	6100 5950 6600 5950
+Connection ~ 6350 6250
+Wire Wire Line
+	6350 6250 6350 6850
+Wire Wire Line
+	6350 6250 6600 6250
+Wire Wire Line
+	2700 6150 2700 6050
+Wire Wire Line
+	2700 6050 2800 6050
+Connection ~ 2800 6050
+$Comp
+L power:GNDA #PWR0150
+U 1 1 5CD3A2D7
+P 8250 7450
+F 0 "#PWR0150" H 8250 7200 50  0001 C CNN
+F 1 "GNDA" H 8255 7277 50  0000 C CNN
+F 2 "" H 8250 7450 50  0001 C CNN
+F 3 "" H 8250 7450 50  0001 C CNN
+	1    8250 7450
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:VDDA #PWR0151
+U 1 1 5CD3A563
+P 8250 5850
+F 0 "#PWR0151" H 8250 5700 50  0001 C CNN
+F 1 "VDDA" H 8267 6023 50  0000 C CNN
+F 2 "" H 8250 5850 50  0001 C CNN
+F 3 "" H 8250 5850 50  0001 C CNN
+	1    8250 5850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7400 6750 7400 6850
+Wire Wire Line
+	7400 6850 7550 6850
+Wire Wire Line
+	5750 6750 7400 6750
+$Comp
+L Device:CP_Small C5003
+U 1 1 5CF95C4C
+P 8750 6500
+F 0 "C5003" H 8850 6600 50  0000 L CNN
+F 1 "0.1uF 35V Tant" H 8850 6500 50  0000 L CNN
+F 2 "Capacitor_Tantalum_SMD:CP_EIA-3216-18_Kemet-A" H 8750 6500 50  0001 C CNN
+F 3 "http://datasheet.octopart.com/T491A104K035AT-Kemet-datasheet-5314837.pdf" H 8750 6500 50  0001 C CNN
+F 4 "KEMET" H 8750 6500 50  0001 C CNN "MFG Name"
+F 5 "T491A104K035AT" H 8750 6500 50  0001 C CNN "MFG Part Num"
+F 6 "Digi-key" H 8750 6500 50  0001 C CNN "Distrib Name"
+F 7 "Digi-key" H 6300 -750 50  0001 C CNN "Distrib"
+F 8 "https://www.digikey.fr/product-detail/fr/kemet/T491A104K035AT/399-3676-1-ND/819001" H 6300 -750 50  0001 C CNN "Distrib Link"
+F 9 "399-3676-1-ND" H 6300 -750 50  0001 C CNN "Distrib PN"
+	1    8750 6500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8750 6300 8250 6300
+Wire Wire Line
+	8750 6300 8750 6400
+Wire Wire Line
+	8250 7450 8250 7400
+Wire Wire Line
+	8750 6600 8750 7400
+Wire Wire Line
+	8750 7400 8250 7400
+Connection ~ 8250 7400
+Wire Wire Line
+	8250 7400 8250 7350
+Connection ~ 2900 7050
+Wire Wire Line
+	2900 7050 2900 6350
+Wire Wire Line
+	2900 6150 2900 6050
+$Comp
+L Device:R_Small R1902
+U 1 1 5D17D9CF
+P 2900 6250
+F 0 "R1902" H 3100 6300 50  0000 C CNN
+F 1 "22k" H 3050 6200 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 2830 6250 30  0001 C CNN
+F 3 "" H 2900 6250 30  0000 C CNN
+F 4 "Vishay" H 2900 6250 50  0001 C CNN "MFG Name"
+F 5 "RCA060320K0FKEA" H 2900 6250 50  0001 C CNN "MFG Part Num"
+F 6 "Farnell" H 2900 6250 50  0001 C CNN "Distrib"
+F 7 "2616587" H 2900 6250 50  0001 C CNN "Distrib PN"
+F 8 "Farnell" H -100 150 50  0001 C CNN "Distrib Name"
+	1    2900 6250
+	1    0    0    -1  
+$EndComp
+$Comp
+L Transistor_FET:BSS84 Q5001
+U 1 1 5D1B9B37
+P 7550 4950
+F 0 "Q5001" H 7756 4996 50  0000 L CNN
+F 1 "BSS84" H 7756 4905 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 7750 4875 50  0001 L CIN
+F 3 "http://assets.nexperia.com/documents/data-sheet/BSS84.pdf" H 7550 4950 50  0001 L CNN
+F 4 "Farnell" H 0   0   50  0001 C CNN "Distrib Name"
+F 5 "2323155" H 0   0   50  0001 C CNN "Distrib PN"
+F 6 "2323155" H 0   0   50  0001 C CNN "Distrib Part Num"
+F 7 "ON SEMICONDUCTOR" H 0   0   50  0001 C CNN "MFG Name"
+F 8 "BSS84" H 0   0   50  0001 C CNN "MFG Part Num"
+	1    7550 4950
+	1    0    0    1   
+$EndComp
+Wire Wire Line
+	8600 6900 9150 6900
+Wire Wire Line
+	7650 5450 7650 5600
+Wire Wire Line
+	7650 5200 9100 5200
+Wire Wire Line
+	7650 5150 7650 5200
+Connection ~ 7650 5200
+Wire Wire Line
+	7650 5200 7650 5250
+Wire Wire Line
+	7650 4650 7650 4750
+Wire Wire Line
+	7900 9200 7900 9300
+Wire Wire Line
+	7900 8550 7900 8650
+Connection ~ 7900 8650
+Wire Wire Line
+	7900 8650 7900 9000
+Wire Wire Line
+	7900 8000 7900 8150
+Wire Wire Line
+	7550 6550 7550 6850
+Connection ~ 7550 6850
+Wire Wire Line
+	7550 6850 7900 6850
+Wire Wire Line
+	7750 6550 7750 6950
+Connection ~ 7750 6950
+Wire Wire Line
+	7750 6950 7900 6950
+Wire Wire Line
+	7750 6200 7750 6350
+Wire Wire Line
+	7550 6200 7550 6350
+Wire Wire Line
+	7550 6200 7650 6200
+$Comp
+L power:VDDA #PWR0152
+U 1 1 5CCBC5C4
+P 7650 6100
+F 0 "#PWR0152" H 7650 5950 50  0001 C CNN
+F 1 "VDDA" H 7667 6273 50  0000 C CNN
+F 2 "" H 7650 6100 50  0001 C CNN
+F 3 "" H 7650 6100 50  0001 C CNN
+	1    7650 6100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7650 6100 7650 6200
+Connection ~ 7650 6200
+Wire Wire Line
+	7650 6200 7750 6200
+Wire Wire Line
+	8250 6300 8250 5850
+Wire Wire Line
+	8250 6650 8250 6300
+Connection ~ 8250 6300
+$Comp
+L Device:R_Small R5003
+U 1 1 5CCFB211
+P 7750 6450
+F 0 "R5003" H 7950 6450 50  0000 C CNN
+F 1 "DNP" H 7900 6400 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 7680 6450 30  0001 C CNN
+F 3 "http://www.farnell.com/datasheets/2111201.pdf?_ga=2.4434355.1665588229.1554903391-261564914.1550063665&_gac=1.184409556.1554707238.Cj0KCQjw4qvlBRDiARIsAHme6osT8va0QVGysugMK5iz_GUZlWNpWNlNDkp8PpSrOaz_uWKjhaZnk6waAjaDEALw_wcB" H 7750 6450 30  0001 C CNN
+F 4 "Vishay" H 7750 6450 50  0001 C CNN "MFG Name"
+F 5 "RCA060347K0FKEA" H 7750 6450 50  0001 C CNN "MFG Part Num"
+F 6 "541-2207-1-ND " H 7750 6450 50  0001 C CNN "Distrib PN"
+F 7 "Digikey" H 7750 6450 50  0001 C CNN "Distrib"
+F 8 "Digikey" H -4900 -500 50  0001 C CNN "Distrib Name"
+	1    7750 6450
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_Small R5002
+U 1 1 5CCFB88E
+P 7550 6450
+F 0 "R5002" H 7350 6500 50  0000 C CNN
+F 1 "DNP" H 7400 6400 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 7480 6450 30  0001 C CNN
+F 3 "http://www.farnell.com/datasheets/2111201.pdf?_ga=2.4434355.1665588229.1554903391-261564914.1550063665&_gac=1.184409556.1554707238.Cj0KCQjw4qvlBRDiARIsAHme6osT8va0QVGysugMK5iz_GUZlWNpWNlNDkp8PpSrOaz_uWKjhaZnk6waAjaDEALw_wcB" H 7550 6450 30  0001 C CNN
+F 4 "Vishay" H 7550 6450 50  0001 C CNN "MFG Name"
+F 5 "RCA060347K0FKEA" H 7550 6450 50  0001 C CNN "MFG Part Num"
+F 6 "541-2207-1-ND " H 7550 6450 50  0001 C CNN "Distrib PN"
+F 7 "Digikey" H 7550 6450 50  0001 C CNN "Distrib"
+F 8 "Digikey" H -5100 -500 50  0001 C CNN "Distrib Name"
+	1    7550 6450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6100 2800 6100 3450
+Text HLabel 7550 1850 2    50   UnSpc ~ 0
+CARD_GND
+$Comp
+L power:GNDA #PWR0157
+U 1 1 5CD54E18
+P 7300 2250
+F 0 "#PWR0157" H 7300 2000 50  0001 C CNN
+F 1 "GNDA" H 7305 2077 50  0000 C CNN
+F 2 "" H 7300 2250 50  0001 C CNN
+F 3 "" H 7300 2250 50  0001 C CNN
+F 4 "" H 2350 2250 50  0001 C CNN "MFG Name"
+F 5 "" H 2350 2250 50  0001 C CNN "MFG Part Num"
+F 6 "" H 2350 2250 50  0001 C CNN "Distrib Name"
+F 7 "" H 2350 2250 50  0001 C CNN "Distrib Part Num"
+	1    7300 2250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7300 2250 7300 1850
+Wire Wire Line
+	7300 1850 7550 1850
+$Comp
+L power:VDDA #PWR0158
+U 1 1 5CD65AC8
+P 7300 1200
+F 0 "#PWR0158" H 7300 1050 50  0001 C CNN
+F 1 "VDDA" H 7317 1373 50  0000 C CNN
+F 2 "" H 7300 1200 50  0001 C CNN
+F 3 "" H 7300 1200 50  0001 C CNN
+	1    7300 1200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7300 1200 7300 1750
+Wire Wire Line
+	7300 1750 7550 1750
+Text HLabel 7550 1750 2    50   UnSpc ~ 0
+CARD_PWR
+Text HLabel 13850 4600 2    50   UnSpc ~ 0
+SHUNT_L
+$Comp
+L Device:LED_ALT D?
+U 1 1 5CBD8F4F
+P 7000 1950
+AR Path="/5B22B7CD/5CBD8F4F" Ref="D?"  Part="1" 
+AR Path="/5B19B7B2/5CBD8F4F" Ref="D3001"  Part="1" 
+AR Path="/5CBC3017/5B19B7B2/5CBD8F4F" Ref="D3001"  Part="1" 
+F 0 "D3001" H 7000 2050 50  0000 C CNN
+F 1 "VDDA" H 7000 1850 50  0000 C CNN
+F 2 "LED_SMD:LED_0603_1608Metric_Castellated" H 7000 1950 60  0001 C CNN
+F 3 "" H 7000 1950 60  0000 C CNN
+F 4 "Vishay" H 7000 1950 50  0001 C CNN "MFG Name"
+F 5 "TLMS1100-GS08.." H 7000 1950 50  0001 C CNN "MFG Part Num"
+F 6 "1440338" H 7000 1950 50  0001 C CNN "Distrib PN"
+F 7 "https://fr.farnell.com/vishay/tlms1100-gs08/led-red-1-6mm-x-0-8mm-63mcd-633nm/dp/1440338" H 7000 1950 50  0001 C CNN "Distrib Link"
+F 8 "Farnell" H 7000 1950 50  0001 C CNN "Distrib"
+F 9 "Farnell" H 3500 -3500 50  0001 C CNN "Distrib Name"
+	1    7000 1950
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:R_Small R?
+U 1 1 5CBD8F5B
+P 7000 1600
+AR Path="/5B22B7CD/5CBD8F5B" Ref="R?"  Part="1" 
+AR Path="/5B19B7B2/5CBD8F5B" Ref="R3001"  Part="1" 
+AR Path="/5CBC3017/5B19B7B2/5CBD8F5B" Ref="R3001"  Part="1" 
+F 0 "R3001" V 7080 1600 50  0000 C CNN
+F 1 "470" V 7000 1600 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 6930 1600 30  0001 C CNN
+F 3 "" H 7000 1600 30  0000 C CNN
+F 4 "Farnell" H 3500 -3350 50  0001 C CNN "Distrib"
+F 5 "Farnell" H 3500 -3350 50  0001 C CNN "Distrib Name"
+F 6 "1469815" H 3500 -3350 50  0001 C CNN "Distrib PN"
+F 7 "1469815" H 3500 -3350 50  0001 C CNN "Distrib Part Num"
+F 8 "Vishay" H 3500 -3350 50  0001 C CNN "MFG Name"
+F 9 "CRCW0603470RFKEA" H 3500 -3350 50  0001 C CNN "MFG Part Num"
+	1    7000 1600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7000 2100 7000 2250
+Wire Wire Line
+	7000 1700 7000 1800
+Wire Wire Line
+	7000 1500 7000 1200
+$Comp
+L power:VDDA #PWR0159
+U 1 1 5CC530BF
+P 7000 1200
+F 0 "#PWR0159" H 7000 1050 50  0001 C CNN
+F 1 "VDDA" H 7017 1373 50  0000 C CNN
+F 2 "" H 7000 1200 50  0001 C CNN
+F 3 "" H 7000 1200 50  0001 C CNN
+	1    7000 1200
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GNDA #PWR0160
+U 1 1 5CC85DBB
+P 7000 2250
+F 0 "#PWR0160" H 7000 2000 50  0001 C CNN
+F 1 "GNDA" H 7005 2077 50  0000 C CNN
+F 2 "" H 7000 2250 50  0001 C CNN
+F 3 "" H 7000 2250 50  0001 C CNN
+F 4 "" H 2050 2250 50  0001 C CNN "MFG Name"
+F 5 "" H 2050 2250 50  0001 C CNN "MFG Part Num"
+F 6 "" H 2050 2250 50  0001 C CNN "Distrib Name"
+F 7 "" H 2050 2250 50  0001 C CNN "Distrib Part Num"
+	1    7000 2250
+	1    0    0    -1  
+$EndComp
+Text Notes 7700 4800 0    50   ~ 0
+S
+Text Notes 7700 5150 0    50   ~ 0
+D
+Text Notes 7350 5100 0    50   ~ 0
+G
+Text Notes 7600 8500 0    50   ~ 0
+G
+Text Notes 8000 8550 0    50   ~ 0
+D
+Text Notes 8000 8200 0    50   ~ 0
+S
 $EndSCHEMATC

@@ -1,3 +1,3 @@
 (fp_lib_table
-  (lib (name leia)(type KiCad)(uri ../libs/wookey.pretty)(options "")(descr ""))
+  (lib (name leia)(type KiCad)(uri ${KIPRJMOD}/libs/wookey/wookey.pretty)(options "")(descr ""))
 )
