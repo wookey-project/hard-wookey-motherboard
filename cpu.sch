@@ -1,5 +1,5 @@
 EESchema Schematic File Version 4
-LIBS:wookey-cache
+LIBS:leia-cache
 EELAYER 29 0
 EELAYER END
 $Descr A2 23386 16535
@@ -15,7 +15,7 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
-L wookey:LD1117S33TR U1
+L leia:LD1117S33TR U1
 U 1 1 5CDD01A8
 P 4250 2950
 F 0 "U1" H 4250 3200 40  0000 C CNN
@@ -79,7 +79,7 @@ F 8 "FARNELL" H 0   50  50  0001 C CNN "Distrib"
 	1    0    0    -1  
 $EndComp
 $Comp
-L wookey:GND #PWR0133
+L leia:GND #PWR0133
 U 1 1 5CDD01AC
 P 4250 3450
 F 0 "#PWR0133" H 4250 3200 50  0001 C CNN
@@ -90,7 +90,7 @@ F 3 "" H 4250 3450 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L wookey:ZENERsmall D1
+L leia:ZENERsmall D1
 U 1 1 557FE9CE
 P 2550 2400
 F 0 "D1" H 2550 2500 40  0000 C CNN
@@ -106,7 +106,7 @@ F 8 "FARNELL" H 2550 2400 50  0001 C CNN "Distrib"
 	-1   0    0    1   
 $EndComp
 $Comp
-L wookey:+3V3 #PWR0134
+L leia:+3V3 #PWR0134
 U 1 1 5CDD01AD
 P 5050 2900
 F 0 "#PWR0134" H 5050 2750 50  0001 C CNN
@@ -149,7 +149,7 @@ F 8 "CRCW0603470RFKEA" H 0   -100 50  0001 C CNN "MFG Part Num"
 	1    0    0    -1  
 $EndComp
 $Comp
-L wookey:GND #PWR0135
+L leia:GND #PWR0135
 U 1 1 557FEFE3
 P 1450 5600
 F 0 "#PWR0135" H 1450 5350 50  0001 C CNN
@@ -160,7 +160,7 @@ F 3 "" H 1450 5600 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L wookey:+3V3 #PWR0136
+L leia:+3V3 #PWR0136
 U 1 1 557FF00F
 P 1450 4150
 F 0 "#PWR0136" H 1450 4000 50  0001 C CNN
@@ -179,7 +179,7 @@ USB_FS_VBUS
 Text Label 1850 2650 0    60   ~ 0
 USB_HS_VBUS
 $Comp
-L wookey:LED D111
+L leia:LED D111
 U 1 1 557FF390
 P 3500 5450
 F 0 "D111" H 3500 5550 50  0000 C CNN
@@ -195,7 +195,7 @@ F 8 "FARNELL" H 3500 5450 50  0001 C CNN "Distrib"
 	0    -1   -1   0   
 $EndComp
 $Comp
-L wookey:LED D110
+L leia:LED D110
 U 1 1 557FF3FD
 P 3150 5450
 F 0 "D110" H 3150 5550 50  0000 C CNN
@@ -215,7 +215,7 @@ LED0_PC4
 Text Label 3750 4250 0    60   ~ 0
 LED1_PC5
 $Comp
-L wookey:+3V3 #PWR0137
+L leia:+3V3 #PWR0137
 U 1 1 5CDD01B1
 P 10600 3300
 F 0 "#PWR0137" H 10600 3150 50  0001 C CNN
@@ -370,7 +370,7 @@ F 8 "1740612" H 0   -50 50  0001 C CNN "Distrib PN"
 	1    0    0    -1  
 $EndComp
 $Comp
-L wookey:+3V3 #PWR0138
+L leia:+3V3 #PWR0138
 U 1 1 55801B5A
 P 10950 4850
 F 0 "#PWR0138" H 10950 4700 50  0001 C CNN
@@ -381,7 +381,7 @@ F 3 "" H 10950 4850 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L wookey:GND #PWR0139
+L leia:GND #PWR0139
 U 1 1 55801C6D
 P 10300 4000
 F 0 "#PWR0139" H 10300 3750 50  0001 C CNN
@@ -392,7 +392,7 @@ F 3 "" H 10300 4000 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L wookey:GND #PWR0140
+L leia:GND #PWR0140
 U 1 1 558023B8
 P 10650 11300
 F 0 "#PWR0140" H 10650 11050 50  0001 C CNN
@@ -403,7 +403,7 @@ F 3 "" H 10650 11300 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L wookey:GND #PWR0141
+L leia:GND #PWR0141
 U 1 1 55802906
 P 11550 11650
 F 0 "#PWR0141" H 11550 11400 50  0001 C CNN
@@ -482,7 +482,7 @@ F 8 "1740612" H 0   50  50  0001 C CNN "Distrib PN"
 	1    0    0    -1  
 $EndComp
 $Comp
-L wookey:GND #PWR0142
+L leia:GND #PWR0142
 U 1 1 558063EC
 P 7950 5750
 F 0 "#PWR0142" H 7950 5500 50  0001 C CNN
@@ -493,7 +493,7 @@ F 3 "" H 7950 5750 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L wookey:+3V3 #PWR0143
+L leia:+3V3 #PWR0143
 U 1 1 5CDD01B8
 P 7950 4550
 F 0 "#PWR0143" H 7950 4400 50  0001 C CNN
@@ -504,12 +504,12 @@ F 3 "" H 7950 4550 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L wookey:SW_PUSH SW514
+L leia:SW_PUSH SW514
 U 1 1 55806494
 P 7650 5400
 F 0 "SW514" H 7800 5510 50  0000 C CNN
 F 1 "RESET" H 7650 5320 50  0000 C CNN
-F 2 "wookey:KSR_TACTILE_SWITCH" H 7650 5400 60  0001 C CNN
+F 2 "leia:KSR_TACTILE_SWITCH" H 7650 5400 60  0001 C CNN
 F 3 "http://www.farnell.com/datasheets/1780692.pdf" H 7650 5400 60  0001 C CNN
 F 4 "C & K COMPONENTS" H 7650 5400 60  0001 C CNN "MFG Name"
 F 5 "KSR231G LFS" H 7650 5400 60  0001 C CNN "MFG Part Num"
@@ -699,7 +699,7 @@ F 7 "https://fr.rs-online.com/web/p/embases-de-circuit-imprime/1802130/" H 20650
 	1    0    0    -1  
 $EndComp
 $Comp
-L wookey:+3V3 #PWR0145
+L leia:+3V3 #PWR0145
 U 1 1 5CDD01BA
 P 20350 2400
 F 0 "#PWR0145" H 20350 2250 50  0001 C CNN
@@ -752,7 +752,7 @@ F 8 "CRCW0603470RFKEA" H 0   -50 50  0001 C CNN "MFG Part Num"
 	1    0    0    -1  
 $EndComp
 $Comp
-L wookey:GND #PWR0146
+L leia:GND #PWR0146
 U 1 1 559EE3ED
 P 3300 5750
 F 0 "#PWR0146" H 3300 5500 50  0001 C CNN
@@ -771,7 +771,7 @@ POWER
 Text Notes 18250 2250 0    81   ~ 16
 EXTENSION & DEBUG
 $Comp
-L wookey:GND #PWR0147
+L leia:GND #PWR0147
 U 1 1 55A4B025
 P 20150 5400
 F 0 "#PWR0147" H 20150 5150 50  0001 C CNN
@@ -784,7 +784,7 @@ $EndComp
 Text Label 2850 2900 0    81   ~ 0
 EXT_5V
 $Comp
-L wookey:+5V #PWR0148
+L leia:+5V #PWR0148
 U 1 1 5CDD01BD
 P 3500 2900
 F 0 "#PWR0148" H 3500 2750 50  0001 C CNN
@@ -814,7 +814,7 @@ F 7 "http://fr.rs-online.com/web/p/embases-de-circuit-imprime/3606437/" H 20400 
 	1    0    0    -1  
 $EndComp
 $Comp
-L wookey:GND #PWR0149
+L leia:GND #PWR0149
 U 1 1 55B89A86
 P 20150 3800
 F 0 "#PWR0149" H 20150 3550 50  0001 C CNN
@@ -825,7 +825,7 @@ F 3 "" H 20150 3800 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L wookey:+3V3 #PWR0150
+L leia:+3V3 #PWR0150
 U 1 1 583F464B
 P 18900 3750
 F 0 "#PWR0150" H 18900 3600 50  0001 C CNN
@@ -845,7 +845,7 @@ NoConn ~ 12600 6500
 NoConn ~ 9650 6200
 NoConn ~ 9650 6500
 $Comp
-L wookey:ZENERsmall D2
+L leia:ZENERsmall D2
 U 1 1 58B9AE08
 P 2550 2650
 F 0 "D2" H 2550 2750 40  0000 C CNN
@@ -876,12 +876,12 @@ F 7 "http://fr.rs-online.com/web/p/embases-de-circuit-imprime/3606437/" H 20400 
 	1    0    0    -1  
 $EndComp
 $Comp
-L wookey:SW_PUSH SW503
+L leia:SW_PUSH SW503
 U 1 1 58BDB2DF
 P 5200 4500
 F 0 "SW503" H 5350 4610 50  0000 C CNN
 F 1 "DFU" H 5200 4420 50  0000 C CNN
-F 2 "wookey:KSR_TACTILE_SWITCH" H 5200 4500 60  0001 C CNN
+F 2 "leia:KSR_TACTILE_SWITCH" H 5200 4500 60  0001 C CNN
 F 3 "http://www.farnell.com/datasheets/1780692.pdf" H 5200 4500 60  0001 C CNN
 F 4 "C & K COMPONENTS" H 5200 4500 60  0001 C CNN "MFG Name"
 F 5 "KSR231G LFS" H 5200 4500 60  0001 C CNN "MFG Part Num"
@@ -892,7 +892,7 @@ F 8 "FARNELL" H 5200 4500 50  0001 C CNN "Distrib"
 	0    -1   1    0   
 $EndComp
 $Comp
-L wookey:GND #PWR0151
+L leia:GND #PWR0151
 U 1 1 58BDB96C
 P 5200 5300
 F 0 "#PWR0151" H 5200 5050 50  0001 C CNN
@@ -919,7 +919,7 @@ F 8 "CRCW060310K0FKEAHP" H 0   50  50  0001 C CNN "MFG Part Num"
 	1    0    0    -1  
 $EndComp
 $Comp
-L wookey:+3V3 #PWR0152
+L leia:+3V3 #PWR0152
 U 1 1 5CDD01C1
 P 5200 4100
 F 0 "#PWR0152" H 5200 3950 50  0001 C CNN
@@ -935,7 +935,7 @@ NoConn ~ 9650 8800
 Text Label 12850 5900 0    60   ~ 0
 DFU
 $Comp
-L wookey:STM32F417VE U500
+L leia:STM32F417VE U500
 U 1 1 555A55E3
 P 11150 8100
 F 0 "U500" H 11150 8100 60  0000 C CNN
@@ -1492,7 +1492,7 @@ F 7 "CRCW060347K0FKEA" H 0   50  50  0001 C CNN "MFG Part Num"
 	1    0    0    -1  
 $EndComp
 $Comp
-L wookey:GND #PWR0153
+L leia:GND #PWR0153
 U 1 1 55B89BB1
 P 20150 4600
 F 0 "#PWR0153" H 20150 4350 50  0001 C CNN
@@ -1683,7 +1683,7 @@ NoConn ~ 9650 9500
 NoConn ~ 9650 7900
 NoConn ~ 9650 8000
 $Comp
-L wookey:GND #PWR0144
+L leia:GND #PWR0144
 U 1 1 5CCE517D
 P 20350 3050
 F 0 "#PWR0144" H 20350 2800 50  0001 C CNN

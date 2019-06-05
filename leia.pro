@@ -24,7 +24,7 @@ ERC_TestSimilarLabels=1
 [pcbnew]
 version=1
 PageLayoutDescrFile=
-LastNetListRead=wookey.net
+LastNetListRead=leia.net
 CopperLayerCount=4
 BoardThickness=1.6
 AllowMicroVias=0

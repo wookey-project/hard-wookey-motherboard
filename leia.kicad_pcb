@@ -2214,7 +2214,7 @@
     )
   )
 
-  (module wookey:USB_Micro-B-MOLEX_105017-0001 (layer F.Cu) (tedit 5B06DA2B) (tstamp 58A45EB2)
+  (module leia:USB_Micro-B-MOLEX_105017-0001 (layer F.Cu) (tedit 5B06DA2B) (tstamp 58A45EB2)
     (at 127.50844 76.4031 90)
     (descr "Micro USB Type B Receptacle")
     (tags "USB USB_B USB_micro USB_OTG")
@@ -2259,7 +2259,7 @@
     )
   )
 
-  (module wookey:USB_Micro-B-MOLEX_105017-0001 (layer F.Cu) (tedit 5B06DA2B) (tstamp 58A45E88)
+  (module leia:USB_Micro-B-MOLEX_105017-0001 (layer F.Cu) (tedit 5B06DA2B) (tstamp 58A45E88)
     (at 127.50844 45.9222 90)
     (descr "Micro USB Type B Receptacle")
     (tags "USB USB_B USB_micro USB_OTG")
@@ -2321,7 +2321,7 @@
       (solder_mask_margin 0.77) (clearance 0.77))
   )
 
-  (module wookey:VJW53666 locked (layer B.Cu) (tedit 5A045A6B) (tstamp 58939A2C)
+  (module leia:VJW53666 locked (layer B.Cu) (tedit 5A045A6B) (tstamp 58939A2C)
     (at 110.28844 49.8831 90)
     (path /5B19B7B2/583DE412)
     (fp_text reference P1000 (at -5.8191 8.39306 90) (layer B.SilkS)
@@ -2677,7 +2677,7 @@
     )
   )
 
-  (module wookey:FPC16_MOLEX_52892_1633 (layer F.Cu) (tedit 5B01E3C5) (tstamp 58937D46)
+  (module leia:FPC16_MOLEX_52892_1633 (layer F.Cu) (tedit 5B01E3C5) (tstamp 58937D46)
     (at 94.0943 97.0407)
     (descr http://www.farnell.com/datasheets/2138527.pdf)
     (tags "MOLEX  52892-1633 FPC_16")
@@ -2774,7 +2774,7 @@
     )
   )
 
-  (module wookey:KSR_TACTILE_SWITCH (layer B.Cu) (tedit 58BEAE09) (tstamp 58BD9A4D)
+  (module leia:KSR_TACTILE_SWITCH (layer B.Cu) (tedit 58BEAE09) (tstamp 58BD9A4D)
     (at 113.247748 41.86941 90)
     (path /5B22B7CD/58BDB2DF)
     (fp_text reference SW503 (at -2.49423 3.917372) (layer B.SilkS)
@@ -2803,7 +2803,7 @@
     )
   )
 
-  (module wookey:KSR_TACTILE_SWITCH (layer B.Cu) (tedit 58BEAE02) (tstamp 58BD9A4E)
+  (module leia:KSR_TACTILE_SWITCH (layer B.Cu) (tedit 58BEAE02) (tstamp 58BD9A4E)
     (at 104.39844 41.8731 270)
     (path /5B22B7CD/55806494)
     (fp_text reference SW514 (at 2.49816 3.49186 180) (layer B.SilkS)
@@ -3303,7 +3303,7 @@
     )
   )
 
-  (module wookey:SDCARD_DM3AT (layer F.Cu) (tedit 55A451C3) (tstamp 5CDC872A)
+  (module leia:SDCARD_DM3AT (layer F.Cu) (tedit 55A451C3) (tstamp 5CDC872A)
     (at 120.21058 95.11538 90)
     (path /5B00AAC9/559EFF9F)
     (fp_text reference U400 (at -6.372056 -9.00914 270) (layer F.SilkS)

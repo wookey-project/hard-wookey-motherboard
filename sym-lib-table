@@ -1,5 +1,5 @@
 (sym_lib_table
-  (lib (name wookey-rescue)(type Legacy)(uri ${KIPRJMOD}/libs/wookey-rescue.lib)(options "")(descr ""))
-  (lib (name wookey-screen-rescue)(type Legacy)(uri ${KIPRJMOD}/libs/wookey-screen.lib)(options "")(descr ""))
-  (lib (name wookey)(type Legacy)(uri ${KIPRJMOD}/libs/wookey.lib)(options "")(descr ""))
+  (lib (name leia-rescue)(type Legacy)(uri ${KIPRJMOD}/libs/wookey-rescue.lib)(options "")(descr ""))
+  (lib (name leia-screen-rescue)(type Legacy)(uri ${KIPRJMOD}/libs/wookey-screen.lib)(options "")(descr ""))
+  (lib (name leia)(type Legacy)(uri ${KIPRJMOD}/libs/wookey.lib)(options "")(descr ""))
 )

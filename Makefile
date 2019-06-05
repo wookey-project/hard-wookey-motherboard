@@ -1,4 +1,4 @@
-PROJ_NAME = wookey
+PROJ_NAME = Leia
 PCB_PATH = .
 PCB_FILE = $(PROJ_NAME).kicad_pcb
 PCB_FILE_PATH = $(PCB_PATH)/$(PCB_FILE)

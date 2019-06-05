@@ -1,15 +1,15 @@
 # WooKey Mainboard PCB
 
-![Pinout](./imgs/wookey-motherboard-3D.png)
+![Pinout](./imgs/leia-motherboard-3D.png)
 
 
 ## Introduction
 
  
-Wookey | https://wookey-project.github.io/
-Copyright 2018 The wookey project team <wookey@ssi.gouv.fr>
+Leia | https://leia-project.github.io/
+Copyright 2018 The leia project team <leia@ssi.gouv.fr>
 
-The Wookey from [ANSSI](https://www.ssi.gouv.fr) is an open source
+The Leia from [ANSSI](https://www.ssi.gouv.fr) is an open source
 hardware design, implementing an Encrypted Flash Drives.
 
 This repository is aimed towards developers.
@@ -17,7 +17,7 @@ This repository is aimed towards developers.
 
 ### Revision information
 
-This directory contains the hardware design for the Wookey board, first public version (Wookey V2).
+This directory contains the hardware design for the Leia board, first public version (Leia V2).
 
 
 ### PCB editing tools
@@ -68,18 +68,18 @@ The directory name may differ according the project your are working with.
 
 ## PCB Pinout
 
-![Pinout](./imgs/wookey-motherboard-top-pinout.png)
+![Pinout](./imgs/leia-motherboard-top-pinout.png)
 
 
 ## PCB Layers
 
 ### PCB TOP layer
 
-![TOP](./imgs/wookey-motherboard-top.png)
+![TOP](./imgs/leia-motherboard-top.png)
 
 ### PCB BOTTOM layer
 
-![BOT](./imgs/wookey-motherboard-bot.png)
+![BOT](./imgs/leia-motherboard-bot.png)
 
 
 ### Layers
@@ -115,7 +115,7 @@ The prepreg is comprised of 2 layers of Isola 2113.
 
 ## Regulatory compliance & handling
 
-The Wookey board is intended for use as a development platform for hardware
+The Leia board is intended for use as a development platform for hardware
 or software. The board is an open system design, which does not include a
 shielded enclosure. This may cause interference to other electrical or
 electronic devices in close proximity. In a domestic environment, this product
@@ -131,8 +131,8 @@ loads, mind its temperature while handling it.
 
 ## License
 
-Wookey | https://wookey-project.github.io/
-Copyright 2018 The wookey project team <wookey@ssi.gouv.fr>
+Leia | https://leia-project.github.io/
+Copyright 2018 The Lia project team <leia@ssi.gouv.fr>
 
 This is an open hardware design licensed under the terms of the CERN Open
 Hardware Licence (OHL) v1.2.
