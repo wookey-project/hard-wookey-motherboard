@@ -1,6 +1,6 @@
-[submodule "libs"]
-	path = libs/wookey
-	url = https://github.com/wookey-project/hard-libs
 [submodule "tools"]
 	path = tools
 	url = https://github.com/wookey-project/hard-tools
+[submodule "libs/wookey"]
+	path = libs/wookey
+	url = https://github.com/wookey-project/hard-libs
