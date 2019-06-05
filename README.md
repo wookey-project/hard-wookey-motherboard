@@ -52,7 +52,7 @@ Here is an example to define KiCad environement path on Apple Mac OS.
   PYTHON_BIN_PATH   = /Applications/KiCad/kicad.app/Contents/Frameworks/Python.framework/Versions/2.7/bin/python
   PYTHON_PATH     = /Applications/Kicad/kicad.app/Contents/Frameworks/python/site-packages
   BOM_GEN_PATH = /Applications/Kicad/kicad.app/Contents/SharedSupport/plugins/bom2grouped_csv.xsl
-  TOOLS_PATH = ../../../tools
+  TOOLS_PATH = ./tools
   =========================================================
 ```
 
