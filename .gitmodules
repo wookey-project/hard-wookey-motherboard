@@ -1,0 +1,9 @@
+[submodule "hard-libs"]
+	path = libs
+	url = https://github.com/wookey-project/hard-libs
+[submodule "libs"]
+	path = libs
+	url = https://github.com/wookey-project/hard-libs
+[submodule "tools"]
+	path = tools
+	url = https://github.com/wookey-project/hard-tools

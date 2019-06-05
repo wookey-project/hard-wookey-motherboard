@@ -4,8 +4,8 @@ EELAYER 29 0
 EELAYER END
 $Descr A2 23386 16535
 encoding utf-8
-Sheet 5 6
-Title "Wookey Motherboard"
+Sheet 5 4
+Title "LEIA Motherboard"
 Date "2019-05-16"
 Rev ""
 Comp "ANSSI"

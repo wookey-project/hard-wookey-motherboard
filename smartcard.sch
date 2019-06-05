@@ -4,8 +4,8 @@ EELAYER 29 0
 EELAYER END
 $Descr A2 23386 16535
 encoding utf-8
-Sheet 5 6
-Title "Wookey Motherboard"
+Sheet 3 4
+Title "LEIA Motherboard"
 Date "2019-05-16"
 Rev ""
 Comp "ANSSI"
@@ -77,11 +77,6 @@ Wire Wire Line
 	11800 8050 12850 8050
 Wire Wire Line
 	11800 7850 12050 7850
-Wire Wire Line
-	12050 7850 12050 8450
-Wire Wire Line
-	11800 8450 12050 8450
-Connection ~ 12050 8450
 Wire Wire Line
 	9500 7950 10900 7950
 Wire Wire Line
@@ -161,8 +156,6 @@ $EndComp
 Text Notes 9850 6900 0    60   ~ 0
 The smartcard is powered by U500 GPIO
 Wire Wire Line
-	12050 8450 12050 8950
-Wire Wire Line
 	10500 8450 10900 8450
 Wire Wire Line
 	11950 7350 12100 7350
@@ -226,4 +219,39 @@ Wire Wire Line
 	11800 7000 12100 7000
 Wire Wire Line
 	12100 7000 12100 7050
+$Comp
+L Device:R_Small R1002
+U 1 1 5CF7CF14
+P 12050 8750
+F 0 "R1002" V 12130 8750 50  0000 C CNN
+F 1 "10" V 12050 8750 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 11980 8750 30  0001 C CNN
+F 3 "" H 12050 8750 30  0000 C CNN
+F 4 "FARNELL" H 1550 1050 50  0001 C CNN "Distrib"
+F 5 "https://fr.farnell.com/vishay/crcw060310k0fkeahp/res-couche-epaisse-10k-1-0-25w/dp/1738918" H 1550 1050 50  0001 C CNN "Distrib Link"
+F 6 "1738918" H 1550 1050 50  0001 C CNN "Distrib PN"
+F 7 "Vishay" H 1550 1050 50  0001 C CNN "MFG Name"
+F 8 "CRCW060310K0FKEAHP" H 1550 1050 50  0001 C CNN "MFG Part Num"
+	1    12050 8750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	12050 8850 12050 8950
+$Comp
+L leia:GND #PWR0103
+U 1 1 5CF7F199
+P 11850 8950
+F 0 "#PWR0103" H 11850 8700 50  0001 C CNN
+F 1 "GND" H 11850 8800 50  0000 C CNN
+F 2 "" H 11850 8950 60  0000 C CNN
+F 3 "" H 11850 8950 60  0000 C CNN
+	1    11850 8950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	12050 7850 12050 8650
+Wire Wire Line
+	11850 8950 11850 8450
+Wire Wire Line
+	11850 8450 11800 8450
 $EndSCHEMATC
