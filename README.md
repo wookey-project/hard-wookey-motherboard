@@ -7,7 +7,9 @@
 
  
 Wookey | https://wookey-project.github.io/
-Copyright 2018 The wookey project team <wookey@ssi.gouv.fr>
+Copyright 2018 ANSSI
+
+Authors: The Wookey project Team <wookey@ssi.gouv.fr>
 
 The Wookey from [ANSSI](https://www.ssi.gouv.fr) is an open source
 hardware design, implementing an Encrypted Flash Drives.
