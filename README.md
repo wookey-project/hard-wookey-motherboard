@@ -134,7 +134,10 @@ loads, mind its temperature while handling it.
 ## License
 
 Wookey | https://wookey-project.github.io/
-Copyright 2018 The wookey project team <wookey@ssi.gouv.fr>
+
+Copyright 2019 ANSSI
+
+Authors: The Wookey project Team <wookey@ssi.gouv.fr>
 
 This is an open hardware design licensed under the terms of the CERN Open
 Hardware Licence (OHL) v1.2.
