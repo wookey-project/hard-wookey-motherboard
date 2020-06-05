@@ -9,9 +9,6 @@
 Leia | https://leia-project.github.io/
 Copyright 2018 The leia project team <leia@ssi.gouv.fr>
 
-The Leia from [ANSSI](https://www.ssi.gouv.fr) is an open source
-hardware design, implementing an Encrypted Flash Drives.
-
 This repository is aimed towards developers.
 
 
